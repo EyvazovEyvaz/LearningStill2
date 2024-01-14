@@ -4,60 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9aa372d7-6a7f-4006-b9fc-40f79ba27c2b" name="Changes" comment="commentChance2">
-      <change afterPath="$PROJECT_DIR$/.idea/LearningStill.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rich/production/rich2/AbstractLessons.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rich/production/rich2/LessonCalculates.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rich/production/rich2/Main2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rich/production/rich4/Employeer.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rich/production/rich4/Main.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rich/production/rich4/User.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rich/production/taskletterswithstars/AbstractLessons.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rich/production/taskletterswithstars/LessonCalculates.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rich/production/taskletterswithstars/Main2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rich/production/taskoop/Employeer.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rich/production/taskoop/Main.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rich/production/taskoop/User.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rich/production/testrisgamefirst/Main$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rich/production/testrisgamefirst/Main.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rich/production/testrisgamefirst/TetrisFirstPageFrame.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rich/production/testrisgamefirst/TetrisFrame.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rich/production/testrisgamefirst/TetrisPanel$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rich/production/testrisgamefirst/TetrisPanel$2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rich/production/testrisgamefirst/TetrisPanel.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rich/production/testrisgamefirst/TetrisScorePanel$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rich/production/testrisgamefirst/TetrisScorePanel$2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rich/production/testrisgamefirst/TetrisScorePanel$3.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rich/production/testrisgamefirst/TetrisScorePanel$4.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rich/production/testrisgamefirst/TetrisScorePanel$5.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rich/production/testrisgamefirst/TetrisScorePanel$6.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rich/production/testrisgamefirst/TetrisScorePanel.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rich/production/testrisgamefirst/TetrsiFirstPagePanel.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rich2/src/AbstractLessons.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rich2/src/LessonCalculates.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rich2/src/Main2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rich2/taskletterswithstars.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rich4/src/Employeer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rich4/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rich4/src/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rich4/taskoop.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testrisgamefirst/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testrisgamefirst/src/TetrisFirstPageFrame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testrisgamefirst/src/TetrisFrame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testrisgamefirst/src/TetrisPanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testrisgamefirst/src/TetrisScorePanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testrisgamefirst/src/TetrsiFirstPagePanel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testrisgamefirst/testrisgamefirst.iml" afterDir="false" />
+    <list default="true" id="9aa372d7-6a7f-4006-b9fc-40f79ba27c2b" name="Changes" comment="test2">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rich/production/taskoop/Employeer.class" beforeDir="false" afterPath="$PROJECT_DIR$/rich/production/taskoop/Employeer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rich/production/taskoop/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/rich/production/taskoop/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rich/production/taskoop/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/rich/production/taskoop/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rich/production/testrisgamefirst/TetrisFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/rich/production/testrisgamefirst/TetrisFrame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rich4/src/Employeer.java" beforeDir="false" afterPath="$PROJECT_DIR$/rich4/src/Employeer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rich4/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/rich4/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rich4/src/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/rich4/src/User.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -93,7 +60,7 @@
       <recent name="C:\Users\eyvaz\OneDrive\Desktop\Projects\LearningStill\stilllearning" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main (1)">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="testrisgamefirst" />
@@ -130,9 +97,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.Main2" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -145,6 +112,15 @@
       <option name="presentableId" value="Default" />
       <updated>1704996182414</updated>
     </task>
+    <task id="LOCAL-00001" summary="test2">
+      <option name="closed" value="true" />
+      <created>1705236543399</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1705236543399</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -168,6 +144,8 @@
     <MESSAGE value="commentChance3" />
     <MESSAGE value="commentChance1" />
     <MESSAGE value="commentChance2" />
-    <option name="LAST_COMMIT_MESSAGE" value="commentChance2" />
+    <MESSAGE value="committest1" />
+    <MESSAGE value="test2" />
+    <option name="LAST_COMMIT_MESSAGE" value="test2" />
   </component>
 </project>

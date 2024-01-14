@@ -1,4 +1,4 @@
-public class Employeer {
+public abstract class Employeer {
 
     private int id;
     private int code;
@@ -6,9 +6,10 @@ public class Employeer {
     private String profession;
     private double salary;
 
-    public Employeer(){
-
-    }
+    public abstract void setEmployeerAccountToList(Employeer addAccountToList);
+    public abstract boolean checkNullUserEmployeerAccounts(Employeer addAccountToList);
+    public abstract void getEmployeerAccountList();
+    public abstract boolean checkSameUserEmployeerAccounts(Employeer addAccountToList);
 
     public int getCode() {
         return code;
