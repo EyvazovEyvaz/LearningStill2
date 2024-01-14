@@ -422,6 +422,7 @@ public class TetrisPanel extends JPanel {
                                 }
                             }
                             case 1 -> {
+
                                 try {
                                     imagef = ImageIO.read(new File(str1));
                                 } catch (IOException e) {
