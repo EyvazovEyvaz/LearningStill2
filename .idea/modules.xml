@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/LearningStill.iml" filepath="$PROJECT_DIR$/.idea/LearningStill.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rich/rich.iml" filepath="$PROJECT_DIR$/rich/rich.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rich2/taskletterswithstars.iml" filepath="$PROJECT_DIR$/rich2/taskletterswithstars.iml" />
+      <module fileurl="file://$PROJECT_DIR$/rich4/taskoop.iml" filepath="$PROJECT_DIR$/rich4/taskoop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/testrisgamefirst/testrisgamefirst.iml" filepath="$PROJECT_DIR$/testrisgamefirst/testrisgamefirst.iml" />
+    </modules>
+  </component>
+</project>
