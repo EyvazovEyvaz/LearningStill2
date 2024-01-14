@@ -11,6 +11,7 @@ public class TetrisFrame extends JFrame {
     public static final int FRAME_WIGHT = 800;
     public static final int FRAME_HEIGHT = 700;
     TetrisFrame(){
+
         this.pack();
         this.setSize(FRAME_WIGHT,FRAME_HEIGHT);
         this.setTitle("EYVAZ_TETRIS_GAME");
