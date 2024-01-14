@@ -404,7 +404,6 @@ public class TetrisPanel extends JPanel {
             }
         }
     }
-
     public void paint2(Graphics g) {
         for (ArrayList<Integer> rr : arrayList) {
             BufferedImage imagef = null;
