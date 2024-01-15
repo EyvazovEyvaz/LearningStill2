@@ -1,3 +1,0 @@
-CCode 1
-CCid 11
-CCname EYVAZ

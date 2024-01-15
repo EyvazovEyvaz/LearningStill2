@@ -6,10 +6,10 @@ public abstract class Employeer {
     private String profession;
     private double salary;
 
-    public abstract void setEmployeerAccountToList(Employeer addAccountToList);
-    public abstract boolean checkNullUserEmployeerAccounts(Employeer addAccountToList);
-    public abstract void getEmployeerAccountList();
-    public abstract boolean checkSameUserEmployeerAccounts(Employeer addAccountToList);
+    public abstract void setEmployeerUserToList(Employeer addAccountToList);
+    public abstract boolean checkNullUserEmployeers(Employeer addAccountToList);
+    public abstract void getEmployeerUserList();
+    public abstract boolean checkSameUserEmployeers(Employeer addAccountToList);
 
     public int getCode() {
         return code;

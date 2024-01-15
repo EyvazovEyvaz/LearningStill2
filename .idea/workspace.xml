@@ -4,13 +4,31 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9aa372d7-6a7f-4006-b9fc-40f79ba27c2b" name="Changes" comment="committest1">
+    <list default="true" id="9aa372d7-6a7f-4006-b9fc-40f79ba27c2b" name="Changes" comment="tetristest5">
+      <change afterPath="$PROJECT_DIR$/rich4/src/Account.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rich/production/taskoop/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/rich/production/taskoop/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rich/production/taskoop/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/rich/production/taskoop/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rich/production/testrisgamefirst/TetrisPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/rich/production/testrisgamefirst/TetrisPanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rich4/clientfilesdirectory/clientsFileList1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rich4/clientfilesdirectory/clientsFileList2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rich4/clientfilesdirectory/clientsFileList3.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/rich4/src/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/rich4/src/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rich4/src/Employeer.java" beforeDir="false" afterPath="$PROJECT_DIR$/rich4/src/Employeer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rich4/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/rich4/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rich4/src/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/rich4/src/User.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -19,24 +37,24 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "ToolWindowGit.ShowToolbar": "false",
-    "jdk.selected.JAVA_MODULE": "19",
-    "last_opened_file_path": "C:/Users/eyvaz/OneDrive/Desktop/Projects/LearningStill",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;ToolWindowGit.ShowToolbar&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;19&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/eyvaz/OneDrive/Desktop/Projects/LearningStill&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   },
-  "keyToStringList": {
-    "ChangesTree.GroupingKeys": [
-      "directory",
-      "module"
+  &quot;keyToStringList&quot;: {
+    &quot;ChangesTree.GroupingKeys&quot;: [
+      &quot;directory&quot;,
+      &quot;module&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\eyvaz\OneDrive\Desktop\Projects\LearningStill\testrisgamefirst\src" />
@@ -46,7 +64,7 @@
       <recent name="C:\Users\eyvaz\OneDrive\Desktop\Projects\LearningStill\stilllearning" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main (1)">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="testrisgamefirst" />
@@ -83,9 +101,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.Main2" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -98,6 +116,23 @@
       <option name="presentableId" value="Default" />
       <updated>1704996182414</updated>
     </task>
+    <task id="LOCAL-00001" summary="tetristest4">
+      <option name="closed" value="true" />
+      <created>1705265200285</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1705265200285</updated>
+    </task>
+    <task id="LOCAL-00002" summary="tetristest5">
+      <option name="closed" value="true" />
+      <created>1705265480131</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1705265480131</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -122,6 +157,11 @@
     <MESSAGE value="commentChance1" />
     <MESSAGE value="commentChance2" />
     <MESSAGE value="committest1" />
-    <option name="LAST_COMMIT_MESSAGE" value="committest1" />
+    <MESSAGE value="tetristest4" />
+    <MESSAGE value="tetristest5" />
+    <option name="LAST_COMMIT_MESSAGE" value="tetristest5" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/LearningStill$Main.ic" NAME="Main Coverage Results" MODIFIED="1705338283165" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
