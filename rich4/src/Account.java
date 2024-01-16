@@ -5,11 +5,14 @@ public class Account {
     User obj;
     double balance;
 
-    public Account(int id, int account, User obj, double balance){
+    Accountstatus accountstatus;
+
+    public Account(int id, int account, User obj, double balance, Accountstatus accountstatus){
         this.id = id;
         this.account = account;
         this.obj = obj;
         this.balance = balance;
+        this.accountstatus = accountstatus;
     }
 
     public int getAccount() {

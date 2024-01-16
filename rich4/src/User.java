@@ -1,6 +1,4 @@
 import java.io.*;
-import java.util.Arrays;
-import java.util.Objects;
 import java.util.Scanner;
 
 public class User extends Employeer implements Client{
@@ -154,10 +152,10 @@ public class User extends Employeer implements Client{
         return false;
     }
 
-    public void addAccount(int id, int account, User obj, double balance){
+    public void addAccount(int id, int account, User obj, double balance, Accountstatus accountstatus){
 
         if (id == obj.idEmp){
-            Account acc = new Account(id,account, obj, balance);
+            Account acc = new Account(id,account, obj, balance, Accountstatus.OPEN);
 
             Account[] empoyeerAccountList2 = new Account[employeerAccountlist1.length+1];
 
@@ -169,7 +167,7 @@ public class User extends Employeer implements Client{
             employeerAccountlist1[employeerAccountlist1.length-1] = acc;
             System.out.println("ACCOUNT added for EMPLOYEER User");
         }else if (id == obj.idClient){
-            Account acc = new Account(id,account, obj, balance);
+            Account acc = new Account(id,account, obj, balance,Accountstatus.OPEN);
 
             Account[] ClientAccountlist2 = new Account[ClientAccountlist1.length+1];
 
