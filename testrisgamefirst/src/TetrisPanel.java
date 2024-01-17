@@ -566,11 +566,14 @@ public class TetrisPanel extends JPanel {
         label.add(buttonj);
         this.add(label);
 
-
         button.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
+                //Main.createObjectFirstPage1();
+                Main.createObjTetris1();
+                arrayList = new ArrayList<>();
+                pause_cont = false;
+                pause_cont2 = true;
             }
         });
 

@@ -31,7 +31,7 @@ public class TetrisScorePanel extends JPanel {
     static boolean checkReset = false;
     static int checkSpeed = 0;
 
-    JButton buttonRight, buttonLeft,buttonDown, buttonReset, buttonRotate, buttonResume;
+   static JButton buttonRight, buttonLeft,buttonDown, buttonReset, buttonRotate, buttonResume;
 
    static int clrs1;
    static int clrs2;

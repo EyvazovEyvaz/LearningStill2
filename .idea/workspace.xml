@@ -4,7 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9aa372d7-6a7f-4006-b9fc-40f79ba27c2b" name="Changes" comment="tranaction1" />
+    <list default="true" id="9aa372d7-6a7f-4006-b9fc-40f79ba27c2b" name="Changes" comment="lastChance1">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testrisgamefirst/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/testrisgamefirst/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testrisgamefirst/src/TetrisPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/testrisgamefirst/src/TetrisPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testrisgamefirst/src/TetrisScorePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/testrisgamefirst/src/TetrisScorePanel.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -52,7 +57,7 @@
       <recent name="C:\Users\eyvaz\OneDrive\Desktop\Projects\LearningStill\stilllearning" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Application.Main (1)">
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="testrisgamefirst" />
@@ -89,8 +94,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main (1)" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main2" />
       </list>
     </recent_temporary>
@@ -136,7 +141,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705442816206</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="lastChance1">
+      <option name="closed" value="true" />
+      <created>1705511331031</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1705511331031</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -165,7 +178,19 @@
     <MESSAGE value="tetristest5" />
     <MESSAGE value="tetristest6" />
     <MESSAGE value="tranaction1" />
-    <option name="LAST_COMMIT_MESSAGE" value="tranaction1" />
+    <MESSAGE value="lastChance1" />
+    <option name="LAST_COMMIT_MESSAGE" value="lastChance1" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/testrisgamefirst/src/TetrsiFirstPagePanel.java</url>
+          <line>63</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/LearningStill$Main.ic" NAME="Main Coverage Results" MODIFIED="1705338283165" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
