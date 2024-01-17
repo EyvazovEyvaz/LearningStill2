@@ -22,13 +22,17 @@ public class Transaction {
         return percentCommision;
     }
     public boolean checkLegalTransfer(){
-        return account1.getBalance() >= amount + amount * calculateCommission() / 100 && account1.accountstatus == Accountstatus.OPEN;
+
+        return account1.getBalance() >= amount + amount * calculateCommission()/ 100 && account1.accountstatus == Accountstatus.OPEN;
     }
     public void transfer() throws IOException {
         if (checkLegalTransfer()){
-            account1.setBalance(account1.getBalance()-amount+amount * calculateCommission()/ 100);
+            account1.setBalance(account1.getBalance()-amount-amount * calculateCommission()/100);
             account2.setBalance(account2.getBalance()+amount);
             System.out.println("the amount has been successfully added to the account number... "+account2.getAccount());
+            System.out.println(account1.getAccount()+" Account balance: "+ account1.getBalance());
+            System.out.println(account2.getAccount()+" Account balance: "+ account2.getBalance());
+            System.out.println("----------------------------------------------------------------");
         }else{
             System.out.println("the balance amount is low or the account status is closed!");
         }

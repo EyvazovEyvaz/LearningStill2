@@ -179,27 +179,26 @@ public class Menu {
         System.out.println("Enter the amount you want to transfer: ");
         double mount = sc.nextDouble();
 
-        Transaction transaction = null;
         if (checkContainsInsertaccountForEmp1(t1wiz) !=null && checkContainsInsertaccountForEmp2(t2trn) !=null){
             // same employee between
             chSameEmployee = true;
-             transaction = new Transaction(checkContainsInsertaccountForEmp1(t1wiz),checkContainsInsertaccountForEmp2(t2trn),mount);
+            Transaction transaction = new Transaction(checkContainsInsertaccountForEmp1(t1wiz),checkContainsInsertaccountForEmp2(t2trn),mount);
              transaction.transfer();
         } else if (checkContainsInsertaccountForClnt1(t1wiz) !=null && checkContainsInsertaccountForClnt2(t2trn) !=null) {
             chSameClient = true;
             // same client between
-             transaction = new Transaction(checkContainsInsertaccountForClnt1(t1wiz),checkContainsInsertaccountForClnt2(t2trn),mount);
+            Transaction transaction = new Transaction(checkContainsInsertaccountForClnt1(t1wiz),checkContainsInsertaccountForClnt2(t2trn),mount);
             transaction.transfer();
         } else if (checkContainsInsertaccountForEmp1(t1wiz)!=null && checkContainsInsertaccountForClnt2(t2trn) !=null) {
             commonCondition = true;
-             transaction = new Transaction(checkContainsInsertaccountForEmp1(t1wiz),checkContainsInsertaccountForClnt2(t2trn),mount);
+            Transaction transaction = new Transaction(checkContainsInsertaccountForEmp1(t1wiz),checkContainsInsertaccountForClnt2(t2trn),mount);
             transaction.transfer();
         } else if (checkContainsInsertaccountForEmp2(t2trn)!=null && checkContainsInsertaccountForClnt1(t1wiz) !=null) {
             commonCondition = true;
-             transaction = new Transaction(checkContainsInsertaccountForClnt1(t1wiz),checkContainsInsertaccountForEmp2(t2trn),mount);
+            Transaction transaction = new Transaction(checkContainsInsertaccountForClnt1(t1wiz),checkContainsInsertaccountForEmp2(t2trn),mount);
             transaction.transfer();
 
-        }else{
+        }else{////////////////
             System.out.println("wrong account");
         }
 
@@ -212,11 +211,12 @@ public class Menu {
         Account em1 = null;
         for (Account accemp: User.employeerAccountlist1) {
             if (accemp !=null){
-                if (accemp.getBalance()==ac1){
+                if (accemp.getAccount()==ac1){
                     em1 = accemp;
                 }
             }
         }
+
         return em1;
     }
     public static Account checkContainsInsertaccountForEmp2(int ac2){
@@ -224,11 +224,12 @@ public class Menu {
         Account em2 = null;
         for (Account accemp: User.employeerAccountlist1) {
             if (accemp !=null){
-                if (accemp.getBalance()==ac2){
+                if (accemp.getAccount()==ac2){
                     em2 = accemp;
                 }
             }
         }
+
         return em2;
     }
     public static Account checkContainsInsertaccountForClnt1(int ac1){
@@ -236,11 +237,12 @@ public class Menu {
         Account cl1 = null;
         for (Account clnt1: User.ClientAccountlist1) {
             if (clnt1 !=null){
-                if (clnt1.getBalance()==ac1){
+                if (clnt1.getAccount()==ac1){
                     cl1 = clnt1;
                 }
             }
         }
+
         return cl1;
     }
     public static Account checkContainsInsertaccountForClnt2(int ac2){
@@ -248,12 +250,12 @@ public class Menu {
         Account cl2 = null;
         for (Account clnt2: User.ClientAccountlist1) {
             if (clnt2 !=null){
-                if (clnt2.getBalance()==ac2){
+                if (clnt2.getAccount()==ac2){
                     cl2 = clnt2;
-
                 }
             }
         }
+
         return cl2;
     }
 }

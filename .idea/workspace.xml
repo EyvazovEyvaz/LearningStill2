@@ -4,18 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9aa372d7-6a7f-4006-b9fc-40f79ba27c2b" name="Changes" comment="tetristest6">
-      <change afterPath="$PROJECT_DIR$/rich4/src/Accountstatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rich4/src/Menu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rich4/src/Transaction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rich/production/taskoop/Employeer.class" beforeDir="false" afterPath="$PROJECT_DIR$/rich/production/taskoop/Employeer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rich/production/taskoop/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/rich/production/taskoop/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rich/production/taskoop/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/rich/production/taskoop/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rich4/src/Account.java" beforeDir="false" afterPath="$PROJECT_DIR$/rich4/src/Account.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rich4/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/rich4/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rich4/src/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/rich4/src/User.java" afterDir="false" />
-    </list>
+    <list default="true" id="9aa372d7-6a7f-4006-b9fc-40f79ba27c2b" name="Changes" comment="tranaction1" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -139,7 +128,15 @@
       <option name="project" value="LOCAL" />
       <updated>1705351702029</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="tranaction1">
+      <option name="closed" value="true" />
+      <created>1705442816206</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1705442816206</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -167,7 +164,8 @@
     <MESSAGE value="tetristest4" />
     <MESSAGE value="tetristest5" />
     <MESSAGE value="tetristest6" />
-    <option name="LAST_COMMIT_MESSAGE" value="tetristest6" />
+    <MESSAGE value="tranaction1" />
+    <option name="LAST_COMMIT_MESSAGE" value="tranaction1" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/LearningStill$Main.ic" NAME="Main Coverage Results" MODIFIED="1705338283165" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
