@@ -1,10 +1,11 @@
-
 import javax.imageio.ImageIO;
 import javax.sound.sampled.*;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
 import java.awt.image.BufferedImage;
 import java.io.*;
 import java.util.ArrayList;
@@ -37,6 +38,18 @@ public class TetrisScorePanel extends JPanel {
    static int clrs2;
    static int clrs3;
 
+   int checkButtonType = 0;
+    int checkButtonType2 = 0;
+
+    int xForLabel = 0;
+
+    JLabel next = new JLabel("NEXT");
+
+    int clr1 = 255;
+    int clr2 = 0;
+    int clr3 = 0;
+
+    int checkLoopForNextLael = 0;
     Random randomColors = new Random();
     public static final int[][][][] T = {//TTTT
             {{{1, 0, 0}, {1, 1, 0}, {1, 0, 0}}, {{0, 0, 0}, {0, 1, 0}, {1, 1, 1}}, {{0, 0, 1}, {0, 1, 1}, {0, 0, 1}}, {{1, 1, 1}, {0, 1, 0}, {0, 0, 0}},},
@@ -57,7 +70,7 @@ public class TetrisScorePanel extends JPanel {
         this.setBounds(475, 50, FRAME_SCORE_WIGHT, FRAME_SCORE_HEIGHT);
         this.setBackground(Color.white);
         this.setLayout(null);
-        scoreLabel();
+        //scoreLabel();
         score();
         commandbuttonsStartResume();
         this.setFocusable(true);
@@ -65,7 +78,7 @@ public class TetrisScorePanel extends JPanel {
         rnd = random;
     }
 
-    public void scoreLabel() {
+    public void scoreLabel(int clForNextLbl1, int clForNextLbl2, int clForNextLbl3) {
 
         JLabel jLabelScore = new JLabel("SCORE");
         jLabelScore.setBounds(20, 0, 200, 50);
@@ -74,10 +87,9 @@ public class TetrisScorePanel extends JPanel {
         this.add(jLabelScore);
         this.setLayout(null);
 
-        JLabel next = new JLabel("NEXT");
-        next.setBounds(20, 70, 100, 50);
+        next.setBounds(xForLabel, 70, 100, 50);
         next.setFont(new Font("BOLD", Font.BOLD, 20));
-        next.setForeground(Color.red);
+        next.setForeground(new Color(clForNextLbl1, clForNextLbl2, clForNextLbl3));
         this.add(next);
         this.setLayout(null);
 
@@ -98,11 +110,10 @@ public class TetrisScorePanel extends JPanel {
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
 
-
         BufferedImage image0;
 
         try {
-            image0 = ImageIO.read(new File("C:\\Users\\eyvaz\\Downloads\\Screenshot_20240105_153643_Gallery.jpg"));
+            image0 = ImageIO.read(new File("C:\\Users\\eyvaz\\Downloads\\spaceX2.jpg"));
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
@@ -189,19 +200,30 @@ public class TetrisScorePanel extends JPanel {
         }
 
         if (!TetrisPanel.pause_cont) {
-            try {
-                x -= 23;
-                Thread.sleep(0);
-            } catch (InterruptedException e) {
-                throw new RuntimeException(e);
+            if (xForLabel==200){
+                xForLabel = -60;
             }
+            xForLabel += 20;
+            x -= 23;
         }
         if (x < -170) {
             x = 100;
         }
         checkIsGameOver(g);
+        pauseLabel(g);
 
         repaint();
+
+        this.remove(next);
+        checkLoopForNextLael ++;
+        if (checkLoopForNextLael==3){
+            clr1 = randomColors.nextInt(0, 255);
+            clr2 = randomColors.nextInt(0, 255);
+            clr3 = randomColors.nextInt(0, 255);
+            checkLoopForNextLael = 0;
+        }
+
+        scoreLabel(clr1,clr2,clr3);
     }
 
     public void commandbuttonsRights() {
@@ -218,6 +240,11 @@ public class TetrisScorePanel extends JPanel {
         buttonRight.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                try {
+                    musicForStone();
+                } catch (LineUnavailableException | UnsupportedAudioFileException | IOException ex) {
+                    throw new RuntimeException(ex);
+                }
 
                 if (!TetrisPanel.pause_cont && TetrisScorePanel.v != 0) {
                     int m1 = 175;
@@ -240,6 +267,9 @@ public class TetrisScorePanel extends JPanel {
             }
         });
 
+        checkButtonType = 2;
+        ft(buttonRight,checkButtonType);
+
     }
 
     public void commandbuttonsLefts() {
@@ -256,7 +286,11 @@ public class TetrisScorePanel extends JPanel {
         buttonLeft.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
+                try {
+                    musicForStone();
+                } catch (LineUnavailableException | UnsupportedAudioFileException | IOException ex) {
+                    throw new RuntimeException(ex);
+                }
                 if (!TetrisPanel.pause_cont && TetrisScorePanel.v != 0) {
 
                     int n1 = -150;
@@ -277,6 +311,9 @@ public class TetrisScorePanel extends JPanel {
 
             }
         });
+
+        checkButtonType = 1;
+        ft(buttonLeft,checkButtonType);
 
     }
 
@@ -306,6 +343,9 @@ public class TetrisScorePanel extends JPanel {
 
             }
         });
+
+        checkButtonType = 3;
+        ft(buttonDown,checkButtonType);
     }
 
     public void commandbuttonsReset() {
@@ -322,14 +362,24 @@ public class TetrisScorePanel extends JPanel {
         buttonReset.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                try {
+                    musicForReset();
+                } catch (UnsupportedAudioFileException | IOException | LineUnavailableException ex) {
+                    throw new RuntimeException(ex);
+                }
                 if (!TetrisPanel.pause_cont && TetrisScorePanel.v != 0){
                     TetrisPanel.arrayList = new ArrayList<>();
                     TetrisPanel.rnd = TetrisPanel.randommm();
                     TetrisPanel.y = -25;
                     checkReset = true;
+                    //clip.stop();
                 }
             }
         });
+
+        checkButtonType = 4;
+
+        ft(buttonReset,checkButtonType);
 
     }
 
@@ -352,7 +402,7 @@ public class TetrisScorePanel extends JPanel {
                 if (p == 0) {
                     TetrisScorePanel.p++;
                     TetrisPanel.pause_cont = false;
-                    buttonResume.setBackground(Color.white);
+                    buttonResume.setBackground(Color.black);
                     try {
                         music();
                     } catch (UnsupportedAudioFileException | IOException | LineUnavailableException ex) {
@@ -362,7 +412,7 @@ public class TetrisScorePanel extends JPanel {
                     TetrisScorePanel.p--;
                     buttonResume.setBackground(Color.blue);
                     TetrisPanel.pause_cont = true;
-                    clip.stop();
+                    //clip.stop();
                 }
 
             }
@@ -382,6 +432,32 @@ public class TetrisScorePanel extends JPanel {
         clip.loop(Clip.LOOP_CONTINUOUSLY);
 
     }
+    public static void musicForReset() throws UnsupportedAudioFileException, IOException, LineUnavailableException {
+
+        if (!TetrisPanel.pause_cont){
+            File file = new File("C:\\Users\\eyvaz\\Downloads\\reset3.wav");
+            AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(file);
+            Clip clip = AudioSystem.getClip();
+            clip.open(audioInputStream);
+            FloatControl floatControl = (FloatControl) clip.getControl(FloatControl.Type.MASTER_GAIN);
+            floatControl.setValue(6.0f);
+            clip.start();
+        }
+
+    }
+
+    public static void musicForStone() throws LineUnavailableException, UnsupportedAudioFileException, IOException {
+
+        if (!TetrisPanel.pause_cont){
+            File file = new File("C:\\Users\\eyvaz\\Downloads\\musicForButtons.wav");
+            AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(file);
+            Clip clip = AudioSystem.getClip();
+            clip.open(audioInputStream);
+            FloatControl floatControl = (FloatControl) clip.getControl(FloatControl.Type.MASTER_GAIN);
+            floatControl.setValue(6.0f);
+            clip.start();
+        }
+    }
 
     public void commandButtonsRotate() {
         buttonRotate = new JButton();
@@ -399,11 +475,21 @@ public class TetrisScorePanel extends JPanel {
                 if (!TetrisPanel.pause_cont && TetrisScorePanel.v != 0) {
                     TetrisPanel.rotateCheck = true;
                     TetrisPanel.rotate++;
+                    if (TetrisPanel.rnd != 4 ){
+                        try {
+                            musicForStone();
+                        } catch (LineUnavailableException | UnsupportedAudioFileException | IOException ex) {
+                            throw new RuntimeException(ex);
+                        }
+                    }
                 }
             }
         });
 
         this.add(buttonRotate);
+
+        checkButtonType = 5;
+        ft(buttonRotate,checkButtonType);
 
     }
 
@@ -452,5 +538,78 @@ public class TetrisScorePanel extends JPanel {
             g.drawRect(30, 240, allbuttonsSize, allbuttonsSize);
             g.setColor(new Color(clrs1,clrs2,clrs3));
 
+    }
+
+    public void pauseLabel(Graphics g){
+
+        switch (checkButtonType2) {
+            case 1 ->
+                styleButtonNames(g, 0, 255, 255, "Bold", 1, 15, "LEFT", buttonLeft.getX(), buttonLeft.getY());
+            case 2 ->
+                styleButtonNames(g, 31, 82, 5, "Bold", 1, 15, "RIGHT", buttonRight.getX(), buttonRight.getY());
+            case 3 ->
+                styleButtonNames(g, 255, 255, 255, "Bold", 1, 15, "DOWN", buttonDown.getX(), buttonDown.getY());
+            case 4 ->
+                styleButtonNames(g,255, 255, 0, "Bold", 1, 15, "RESET", buttonReset.getX(), buttonReset.getY());
+            case 5 ->
+                styleButtonNames(g,70, 189, 198,"Bold", 1, 15,"ROTATE", buttonRotate.getX(), buttonRotate.getY() - 79);
+        }
+
+    }
+    public void styleButtonNames(Graphics g, int clr1, int clr2, int clr3,String fNm, int fStl, int fSize, String btNa, int x, int y){
+        g.setColor(new Color(clr1, clr2, clr3));
+        g.setFont(new Font(fNm, fStl, fSize));
+        g.drawString(btNa, x, y + 70);
+    }
+    public void ft(JButton b, int n){
+        b.addMouseListener(new MouseListener() {
+             int cg = n;
+            @Override
+            public void mouseClicked(MouseEvent e) {
+            }
+
+            @Override
+            public void mousePressed(MouseEvent e) {
+
+            }
+
+            @Override
+            public void mouseReleased(MouseEvent e) {
+
+            }
+
+            @Override
+            public void mouseEntered(MouseEvent e) {
+                switch (cg) {
+                    case 1 -> {
+                        b.setBackground(new Color(0, 0, 255));
+                        checkButtonType2 = 1;
+                    }
+                    case 2 -> {
+                        b.setBackground(new Color(0, 255, 0));
+                        checkButtonType2 = 2;
+                    }
+                    case 3 -> {
+                        b.setBackground(new Color(255, 255, 255));
+                        checkButtonType2 = 3;
+                    }
+                    case 4 -> {
+                        b.setBackground(new Color(255, 255, 0));
+                        checkButtonType2 = 4;
+                    }
+                    case 5 -> {
+                        b.setBackground(new Color(70, 189, 198));
+                        checkButtonType2 = 5;
+                    }
+                }
+
+            }
+
+            @Override
+            public void mouseExited(MouseEvent e) {
+                b.setBackground(Color.black);
+                checkButtonType2 = 0;
+            }
+        });
     }
 }
