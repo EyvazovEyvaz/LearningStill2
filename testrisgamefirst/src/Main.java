@@ -4,7 +4,7 @@ public class Main {
     static TetrisFrame[] arrTetFrame1 = new TetrisFrame[1];
     public static void main(String[] args){
 
-        createObjectFirstPage1();   //defolt
+        createObjectFirstPage1();
 
     }
     public static void createObjectFirstPage1(){

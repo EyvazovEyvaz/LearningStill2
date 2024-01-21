@@ -61,19 +61,32 @@ public class TetrisPanel extends JPanel {
     ArrayList<Integer> arrayListChild;
     static int rand;
 
-    static int speed = 30;
+    static int speed = 100;
 
     int getXline = 0;
     int getYline = 0;
 
     Color a = Color.white;
-    Color b = Color.BLUE;
+
+    Image img0;
+    BufferedImage image0;
+
+    static int fh = 0;
 
     TetrisPanel() {
         this.setBounds(55, 50, FRAME_WIGHT, FRAME_HEIGHT);
         this.setVisible(true);
         this.setLayout(null);
         this.setBackground(a);
+
+
+        try {
+            image0 = ImageIO.read(new File("C:\\Users\\eyvaz\\Downloads\\4e.jpg"));
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+        // img0 = image0.getScaledInstance(getWidth(), getHeight(), 5);
+
     }
 
     public static void thrEad() {
@@ -88,19 +101,14 @@ public class TetrisPanel extends JPanel {
 
     public static void Y() {
         if (pause_cont) return;
-        if (y == 500) {
+        if (y == FRAME_HEIGHT-50 || test()) {
             pause_cont2 = true;
             y = -25;
             rotate = 0;
             rnd = rand;
             x = 0;
-        } else if (test()) {
-            pause_cont2 = true;
-            y = -25;
-            rotate = 0;
-            rnd = rand;
-            x = 0;
-        } else {
+            speed = 100;
+        }else {
             if (y == -25) {
                 randommm();
             }
@@ -118,19 +126,12 @@ public class TetrisPanel extends JPanel {
 
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
-        BufferedImage image0;
 
-        try {
-            image0 = ImageIO.read(new File("C:\\Users\\eyvaz\\Downloads\\spacX1.jpg"));
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
-        Image img0 = image0.getScaledInstance(getWidth(), getHeight(), 5);
-        g.drawImage(img0, 0, 0, this);
+        //g.drawImage(image0, 0, 0, this);s
 
         new TetrisScorePanel(rand);
 
-        //test();
+       long a =  System.currentTimeMillis();
 
         if (rotateCheck) {
             rotateCheck = false;
@@ -151,13 +152,6 @@ public class TetrisPanel extends JPanel {
 
         if (rotate == 4 || rotate == 5 || rotate == 6 || rotate == 7) {
             rotate = 0;
-        }
-
-        if (y == 500 || test()) {
-            arrayListChild = new ArrayList<>();
-            arrayListChild.add(rnd);
-            arrayListChild.add(rotate);
-            speed = 30;
         }
 
         for (int i = 0; i < T[4].length - 1; i++) {
@@ -210,60 +204,53 @@ public class TetrisPanel extends JPanel {
                     }
                     getX = i * UNIC + 6 * UNIC + x;
                     getY = j * UNIC + y;
+                    test();
                     g.drawImage(imagef, getX, getY, UNIC, UNIC, this);
-
-                    if (y == 500) {
-                        if (rnd == 1 && rotate == 0 || rotate == 1 || rotate == 2 || rotate == 3) {
-                            getY -= 25;
-                        }
-                        if (rnd == 5 && rotate == 1) {
-                            getY += 50;
-                        }
-                        if (rnd == 5 && rotate == 0) {
-                            getY -= 25;
-                        }
-                        if (rnd == 0 && rotate == 3 /*||rotate==2*/) {
-                            getY -= 25;
-                        }
-                        if (rnd == 2 && rotate == 0) {
-                            //getY -=25;
-                        }
-                        if (rnd == 3 && rotate == 1) {
-                            getY += 25;
-                        }
-                        if (rnd == 2 && rotate == 1) {
-                            //getY -=25;
-                        }
-                        if (rnd == 3 && rotate == 1) {
-                            getY -= 25;
-                        }
-                        arrayListChild.add(getX);
-                        arrayListChild.add(getY);
-                    } /*else if (test()) {
-                        for (int c = 0; c < T[4].length - 1; c++) {
-                            for (int z = 0; z < T[4][0][0].length; z++) {
-                                if (T[rnd][rotate][c][z] != 0) {
-
-                                    getX = c * UNIC + 6 * UNIC + x;
-                                    getY = z * UNIC + y;
-
-                                    arrayListChild.add(getX);
-                                    arrayListChild.add(getY);
-                                }
-                            }
-                        }
-                    }*/
                 }
             }
         }
 
-        if (test()) {
+        if (y == FRAME_HEIGHT-50 || test()) {
+            arrayListChild = new ArrayList<>();
+            arrayListChild.add(rnd);
+            arrayListChild.add(rotate);
+            speed = 100;
+        }
+
+        if (test() || y == FRAME_HEIGHT-50) {
             for (int c = 0; c < T[4].length - 1; c++) {
                 for (int z = 0; z < T[4][0][0].length; z++) {
                     if (T[rnd][rotate][c][z] != 0) {
 
                         getX = c * UNIC + 6 * UNIC + x;
                         getY = z * UNIC + y;
+
+                        if (y==FRAME_HEIGHT-50){
+                            if (rnd == 1 && rotate == 0 || rotate == 1 || rotate == 2 || rotate == 3) {
+                                getY -= 25;
+                            }
+                            if (rnd == 5 && rotate == 1) {
+                                getY += 50;
+                            }
+                            if (rnd == 5 && rotate == 0) {
+                                getY -= 25;
+                            }
+                            if (rnd == 0 && rotate == 3) {
+                                getY -= 25;
+                            }
+                            if (rnd == 2 && rotate == 0) {
+                                getY -=25;
+                            }
+                            if (rnd == 3 && rotate == 1) {
+                                getY += 25;
+                            }
+                            if (rnd == 2 && rotate == 1) {
+                                getY -=25;
+                            }
+                            if (rnd == 3 && rotate == 1) {
+                                getY -= 25;
+                            }
+                        }
 
                         arrayListChild.add(getX);
                         arrayListChild.add(getY);
@@ -272,12 +259,9 @@ public class TetrisPanel extends JPanel {
             }
         }
 
-        if (y == 500 || test()){
+        if (y == FRAME_HEIGHT-50 || test()) {
             arrayList.add(arrayListChild);
-            for (int tt: arrayListChild){
-                System.out.print(tt+" ");
-            }
-            System.out.println();
+            System.out.println(arrayListChild);
         }
 
         try {
@@ -288,9 +272,9 @@ public class TetrisPanel extends JPanel {
 
         if (!gameOver()) {
             paint2(g);
-            repaint();
             thrEad();
             pauseLabel(g);
+            repaint();
         } else {
             paint2(g);
             paintGameOver(g);
@@ -303,15 +287,34 @@ public class TetrisPanel extends JPanel {
             Y();
         }
 
-        /*for (int i = -1; i <= col; i++) {
+        long b =  System.currentTimeMillis();
+
+
+        for (int i = -1; i <= col; i++) {
             for (int j = -1; j <= row; j++) {
                 g.drawRect(i * UNIC, j * UNIC, UNIC, UNIC);
-                g.setColor(Color.CYAN);
+                g.setColor(Color.white);
             }
-        }*/
+        }
+
+        Random random = new Random();
+
+        int fd1 = random.nextInt(0,255);
+        int fd2 = random.nextInt(0,255);
+        int fd3 = random.nextInt(0,255);
+
+        g.setColor(new Color(fd1, fd2, fd3));
+        g.fill3DRect(0,0,400,10,true);
+        g.setColor(new Color(fd1, fd2, fd3));
+        g.fill3DRect(0,540,400,540,true);
+        g.setColor(new Color(fd1, fd2, fd3));
+        g.fill3DRect(0,0,10,540,true);
+        g.setColor(new Color(fd1, fd2, fd3));
+        g.fill3DRect(390,0,10,540,true);
+
     }
 
-    public void pauseLabel(Graphics g){
+    public void pauseLabel(Graphics g) {
 
         if (pause_cont && TetrisScorePanel.v != 0) {
             g.setColor(Color.RED);
@@ -328,7 +331,7 @@ public class TetrisPanel extends JPanel {
         Clip clip = AudioSystem.getClip();
         clip.open(audioInputStream);
         FloatControl floatControl = (FloatControl) clip.getControl(FloatControl.Type.MASTER_GAIN);
-        if (y == 500 || test() && !gameOver()) {
+        if (y == FRAME_HEIGHT-50 || test() && !gameOver()) {
             floatControl.setValue(6.0f);
             clip.start();
         } else {
@@ -411,14 +414,14 @@ public class TetrisPanel extends JPanel {
                                 }
                             }
                         }*/
-                    }
-                    for (ArrayList<Integer> tt : arrayList) {
-                        for (int c = 0; c < tt.size(); c++) {
-                            if (c % 2 == 0 && tt.get(c) == getXline - 25) {
-                                for (int f = 0; f < T[4].length - 1; f++) {
-                                    for (int v = 0; v < T[4][0][0].length; v++) {
-                                        if (T[rnd][rotate][f][v] != 0) {
-                                            getYline = tt.get(c + 1)-75;
+                }
+                for (ArrayList<Integer> tt : arrayList) {
+                    for (int c = 0; c < tt.size(); c++) {
+                        if (c % 2 == 0 && tt.get(c) == getXline - 25) {
+                            for (int f = 0; f < T[4].length - 1; f++) {
+                                for (int v = 0; v < T[4][0][0].length; v++) {
+                                    if (T[rnd][rotate][f][v] != 0) {
+                                        getYline = tt.get(c + 1) - 75;
                                     }
                                 }
                             }
@@ -429,6 +432,7 @@ public class TetrisPanel extends JPanel {
             }
         }
     }
+
     public void paint2(Graphics g) {
         for (ArrayList<Integer> rr : arrayList) {
             BufferedImage imagef = null;
@@ -493,15 +497,23 @@ public class TetrisPanel extends JPanel {
     }
 
     public static boolean test() {
-
-        for (ArrayList<Integer> tt : arrayList) {
+        boolean vv = false;
+       main: for (ArrayList<Integer> tt : arrayList) {
             for (int i = 0; i < tt.size(); i++) {
-                if (i!=0 && i % 2 == 0 && tt.get(i) == getX && tt.get(i + 1) == getY + 25) {
-                    return true;
+                if (i != 0 && i % 2 == 0 && tt.get(i) == getX && tt.get(i + 1) == getY + 25) {
+                    System.out.println("hh");
+                    vv = true;
+                    break main;
+                }else {
+                    vv = false;
                 }
             }
         }
-        return false;
+        if (vv){
+            return true;
+        }else{
+            return false;
+        }
     }
 
     public static boolean testLeft() {
@@ -566,27 +578,27 @@ public class TetrisPanel extends JPanel {
 
     public void whantIsNewGame() {
 
-        JLabel lEADtEXT= new JLabel();
+        JLabel lEADtEXT = new JLabel();
         lEADtEXT.setText("Yenidən oyna");
-        lEADtEXT.setBounds(170,240,300,100);
+        lEADtEXT.setBounds(170, 240, 300, 100);
         lEADtEXT.setForeground(Color.orange);
         this.add(lEADtEXT);
-        JLabel label= new JLabel();
-        label.setBounds(50,300,300,100);
+        JLabel label = new JLabel();
+        label.setBounds(50, 300, 300, 100);
         JButton button = new JButton();
-        button.setBounds(75,0,40,40);
+        button.setBounds(75, 0, 40, 40);
         button.setBackground(Color.WHITE);
         ImageIcon imageIcon = new ImageIcon("C:\\Users\\eyvaz\\OneDrive\\Pictures\\Screenshots\\yes1.png");
         Image image = imageIcon.getImage();
-        Image img = image.getScaledInstance(button.getWidth(),button.getHeight(), 4);
+        Image img = image.getScaledInstance(button.getWidth(), button.getHeight(), 4);
         button.setIcon(new ImageIcon(img));
         label.add(button);
 
         JButton buttonj = new JButton();
-        buttonj.setBounds(185,0,40,40);
+        buttonj.setBounds(185, 0, 40, 40);
         buttonj.setBackground(Color.WHITE);
         ImageIcon imageIcon1 = new ImageIcon("C:\\Users\\eyvaz\\OneDrive\\Pictures\\Screenshots\\yes.png");
-        Image image1 = imageIcon1.getImage().getScaledInstance(buttonj.getWidth(), buttonj.getHeight(),4);
+        Image image1 = imageIcon1.getImage().getScaledInstance(buttonj.getWidth(), buttonj.getHeight(), 4);
         buttonj.setIcon(new ImageIcon(image1));
         label.add(buttonj);
         this.add(label);
@@ -599,6 +611,8 @@ public class TetrisPanel extends JPanel {
                 arrayList = new ArrayList<>();
                 pause_cont = false;
                 pause_cont2 = true;
+
+                TetrisScorePanel.scr = 0;
             }
         });
         buttonj.addActionListener(new ActionListener() {
@@ -610,8 +624,32 @@ public class TetrisPanel extends JPanel {
 
     }
 
-    public void checkisFillallXcoor(){
+    public void checkisFillallXcoor() {
 
+        int[] chAllForYcoor = {0, 25, 50, 75, 100, 125, 150, 175, 200, 225, 250, 275, 300, 325, 350, 375, 400,
+                               425, 450, 475, 500, 525};
 
+        int sum = 0;
+        for (int k : chAllForYcoor) {
+            int[] chcAllXcoor = new int[]{0, 25, 50, 75, 100, 125, 150, 175, 200, 225, 250, 275, 300, 325, 350, 375, 400};
+            sum =0;
+            for (ArrayList<Integer> arr : arrayList) {
+                for (int j = 0; j < arr.size(); j++) {
+                    for (int xc = 0; xc < chcAllXcoor.length; xc++) {
+                        if (j != 0 && j % 2 == 0 && k == arr.get(j + 1) && chcAllXcoor[xc] == arr.get(j) && chcAllXcoor[xc] >= 0) {
+                            chcAllXcoor[xc] += -1000;
+                            sum++;
+                            if (sum==16){
+                                TetrisScorePanel.scr++;
+                                sum =0;
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+
+        System.out.println(sum);
     }
 }
