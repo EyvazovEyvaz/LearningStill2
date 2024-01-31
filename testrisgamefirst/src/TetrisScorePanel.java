@@ -44,9 +44,7 @@ public class TetrisScorePanel extends JPanel {
     int xForLabel = 0;
 
     JLabel next = new JLabel("NEXT");
-   static JLabel scoreL;
 
-  static int scr = 0;
     int clr1 = 255;
     int clr2 = 0;
     int clr3 = 0;
@@ -73,7 +71,7 @@ public class TetrisScorePanel extends JPanel {
         this.setBackground(Color.white);
         this.setLayout(null);
         //scoreLabel();
-        //score();
+        score();
         commandbuttonsStartResume();
         this.setFocusable(true);
         this.setVisible(true);
@@ -89,9 +87,8 @@ public class TetrisScorePanel extends JPanel {
         this.add(jLabelScore);
         this.setLayout(null);
 
-        next.setBounds(xForLabel, 70, 200, 50);
+        next.setBounds(xForLabel, 70, 100, 50);
         next.setFont(new Font("BOLD", Font.BOLD, 20));
-        next.setBackground(Color.white);
         next.setForeground(new Color(clForNextLbl1, clForNextLbl2, clForNextLbl3));
         this.add(next);
         this.setLayout(null);
@@ -100,8 +97,8 @@ public class TetrisScorePanel extends JPanel {
 
     public void score() {
 
-        scoreL = new JLabel();
-        scoreL.setText(String.valueOf(scr));
+        JLabel scoreL = new JLabel();
+        scoreL.setText("0");
         scoreL.setBounds(160, -10, 100, 100);
         scoreL.setFont(new Font("BOLD", Font.BOLD, 60));
         scoreL.setForeground(Color.white);
@@ -227,22 +224,6 @@ public class TetrisScorePanel extends JPanel {
         }
 
         scoreLabel(clr1,clr2,clr3);
-        score();
-
-        Random random = new Random();
-        int fd1 = random.nextInt(0,255);
-        int fd2 = random.nextInt(0,255);
-        int fd3 = random.nextInt(0,255);
-
-        g.setColor(new Color(fd1, fd2, fd3));
-        g.fill3DRect(0,0,250,10,true);
-        g.setColor(new Color(fd1, fd2, fd3));
-        g.fill3DRect(0,540,250,540,true);
-        g.setColor(new Color(fd1, fd2, fd3));
-        g.fill3DRect(0,0,10,540,true);
-        g.setColor(new Color(fd1, fd2, fd3));
-        g.fill3DRect(240,0,10,540,true);
-
     }
 
     public void commandbuttonsRights() {
@@ -323,10 +304,8 @@ public class TetrisScorePanel extends JPanel {
                     if (TetrisPanel.rnd == 2 && TetrisPanel.rotate == 0) {
                         n1 += 25;
                     }
-                    if (TetrisPanel.x > n1 && !TetrisPanel.testLeft()){
-
+                    if (TetrisPanel.x > n1 && !TetrisPanel.testLeft())
                         TetrisPanel.x -= 25;
-                    }
 
                 }
 
@@ -360,11 +339,6 @@ public class TetrisScorePanel extends JPanel {
                     checkSpeed = 0;
                     TetrisPanel.speed = 80;
                 }*/
-                try {
-                    musicForDown();
-                } catch (UnsupportedAudioFileException | IOException | LineUnavailableException ex) {
-                    throw new RuntimeException(ex);
-                }
                 TetrisPanel.speed = 0;
 
             }
@@ -398,7 +372,6 @@ public class TetrisScorePanel extends JPanel {
                     TetrisPanel.rnd = TetrisPanel.randommm();
                     TetrisPanel.y = -25;
                     checkReset = true;
-                    scr = 0;
                     //clip.stop();
                 }
             }
@@ -439,7 +412,7 @@ public class TetrisScorePanel extends JPanel {
                     TetrisScorePanel.p--;
                     buttonResume.setBackground(Color.blue);
                     TetrisPanel.pause_cont = true;
-                    clip.stop();
+                    //clip.stop();
                 }
 
             }
@@ -463,19 +436,6 @@ public class TetrisScorePanel extends JPanel {
 
         if (!TetrisPanel.pause_cont){
             File file = new File("C:\\Users\\eyvaz\\Downloads\\reset3.wav");
-            AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(file);
-            Clip clip = AudioSystem.getClip();
-            clip.open(audioInputStream);
-            FloatControl floatControl = (FloatControl) clip.getControl(FloatControl.Type.MASTER_GAIN);
-            floatControl.setValue(6.0f);
-            clip.start();
-        }
-
-    }
-    public static void musicForDown() throws UnsupportedAudioFileException, IOException, LineUnavailableException {
-
-        if (!TetrisPanel.pause_cont){
-            File file = new File("C:\\Users\\eyvaz\\Downloads\\drop.wav");
             AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(file);
             Clip clip = AudioSystem.getClip();
             clip.open(audioInputStream);
