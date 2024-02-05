@@ -115,7 +115,7 @@ public class TetrisScorePanel extends JPanel {
         BufferedImage image0;
 
         try {
-            image0 = ImageIO.read(new File("C:\\Users\\eyvaz\\Downloads\\spaceX2.jpg"));
+            image0 = ImageIO.read(new File("C:\\Users\\eyvaz\\Downloads\\x1.jpg"));
         } catch (IOException e) {
             throw new RuntimeException(e);
         }

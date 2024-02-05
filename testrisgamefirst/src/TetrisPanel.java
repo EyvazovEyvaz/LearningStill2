@@ -71,9 +71,6 @@ public class TetrisPanel extends JPanel {
     Image img0;
     BufferedImage image0;
 
-    static int fh = 0;
-   static ArrayList<Integer> arimpct = new ArrayList<>();
-
     TetrisPanel() {
         this.setBounds(55, 50, FRAME_WIGHT, FRAME_HEIGHT);
         this.setVisible(true);
@@ -82,11 +79,11 @@ public class TetrisPanel extends JPanel {
 
 
         try {
-            image0 = ImageIO.read(new File("C:\\Users\\eyvaz\\Downloads\\4e.jpg"));
+            image0 = ImageIO.read(new File("C:\\Users\\eyvaz\\Downloads\\x2.jpg"));
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-        // img0 = image0.getScaledInstance(getWidth(), getHeight(), 5);
+         img0 = image0.getScaledInstance(getWidth(), getHeight(), 5);
 
     }
 
@@ -128,9 +125,24 @@ public class TetrisPanel extends JPanel {
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
 
-        //g.drawImage(image0, 0, 0, this);s
+        g.drawImage(img0, 0, 0, this);
 
         new TetrisScorePanel(rand);
+
+        Random random = new Random();
+
+        int fd1 = random.nextInt(0,255);
+        int fd2 = random.nextInt(0,255);
+        int fd3 = random.nextInt(0,255);
+
+        g.setColor(new Color(fd1, fd2, fd3));
+        g.fill3DRect(0,0,400,10,true);
+        g.setColor(new Color(fd1, fd2, fd3));
+        g.fill3DRect(0,540,400,540,true);
+        g.setColor(new Color(fd1, fd2, fd3));
+        g.fill3DRect(0,0,10,540,true);
+        g.setColor(new Color(fd1, fd2, fd3));
+        g.fill3DRect(390,0,10,540,true);
 
        long a =  System.currentTimeMillis();
 
@@ -291,27 +303,12 @@ public class TetrisPanel extends JPanel {
         long b =  System.currentTimeMillis();
 
 
-        for (int i = -1; i <= col; i++) {
+        /*for (int i = -1; i <= col; i++) {
             for (int j = -1; j <= row; j++) {
                 g.drawRect(i * UNIC, j * UNIC, UNIC, UNIC);
-                g.setColor(Color.white);
+                g.setColor(Color.cyan);
             }
-        }
-
-        Random random = new Random();
-
-        int fd1 = random.nextInt(0,255);
-        int fd2 = random.nextInt(0,255);
-        int fd3 = random.nextInt(0,255);
-
-        g.setColor(new Color(fd1, fd2, fd3));
-        g.fill3DRect(0,0,400,10,true);
-        g.setColor(new Color(fd1, fd2, fd3));
-        g.fill3DRect(0,540,400,540,true);
-        g.setColor(new Color(fd1, fd2, fd3));
-        g.fill3DRect(0,0,10,540,true);
-        g.setColor(new Color(fd1, fd2, fd3));
-        g.fill3DRect(390,0,10,540,true);
+        }*/
 
     }
 
