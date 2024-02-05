@@ -72,6 +72,7 @@ public class TetrisPanel extends JPanel {
     BufferedImage image0;
 
     static int fh = 0;
+   static ArrayList<Integer> arimpct = new ArrayList<>();
 
     TetrisPanel() {
         this.setBounds(55, 50, FRAME_WIGHT, FRAME_HEIGHT);
@@ -204,7 +205,7 @@ public class TetrisPanel extends JPanel {
                     }
                     getX = i * UNIC + 6 * UNIC + x;
                     getY = j * UNIC + y;
-                    test();
+
                     g.drawImage(imagef, getX, getY, UNIC, UNIC, this);
                 }
             }
@@ -496,47 +497,73 @@ public class TetrisPanel extends JPanel {
         }
     }
 
-    public static boolean test() {
-        boolean vv = false;
-       main: for (ArrayList<Integer> tt : arrayList) {
-            for (int i = 0; i < tt.size(); i++) {
-                if (i != 0 && i % 2 == 0 && tt.get(i) == getX && tt.get(i + 1) == getY + 25) {
-                    System.out.println("hh");
-                    vv = true;
-                    break main;
-                }else {
-                    vv = false;
+    public static boolean test(){
+
+        for (int t = 0; t < T[4].length - 1; t++) {
+            for (int j = 0; j < T[4][0][0].length; j++) {
+                if (T[rnd][rotate][t][j] != 0) {
+
+                    getX = t * UNIC + 6 * UNIC + x;
+                    getY = j * UNIC + y;
+
+                    for (ArrayList<Integer> tt : arrayList){
+                        for (int i = 0; i < tt.size(); i++) {
+                            if (i != 0 && i % 2 == 0 && tt.get(i) == getX && tt.get(i + 1) == getY+25){
+                                return true;
+                            }
+                        }
+                    }
                 }
             }
         }
-        if (vv){
-            return true;
-        }else{
-            return false;
-        }
+
+        return false;
     }
 
     public static boolean testLeft() {
 
-        for (ArrayList<Integer> tt : arrayList) {
-            for (int i = 0; i < tt.size(); i++) {
-                if (i != 0 && i % 2 == 0 && tt.get(i) == getX - 25 && tt.get(i + 1) == getY) {
-                    return true;
+        for (int t = 0; t < T[4].length - 1; t++) {
+            for (int j = 0; j < T[4][0][0].length; j++) {
+                if (T[rnd][rotate][t][j] != 0) {
+
+                    getX = t * UNIC + 6 * UNIC + x;
+                    getY = j * UNIC + y;
+
+                    for (ArrayList<Integer> tt : arrayList) {
+                        for (int i = 0; i < tt.size(); i++) {
+                            if (i != 0 && i % 2 == 0 && tt.get(i) == getX - 25 && tt.get(i + 1) == getY) {
+                                return true;
+                            }
+                        }
+                    }
+
                 }
             }
         }
+
         return false;
     }
 
     public static boolean testRight() {
 
-        for (ArrayList<Integer> tt : arrayList) {
-            for (int i = 0; i < tt.size(); i++) {
-                if (i != 0 && i % 2 == 0 && tt.get(i) == getX + 25 && tt.get(i + 1) == getY) {
-                    return true;
+        for (int t = 0; t < T[4].length - 1; t++) {
+            for (int j = 0; j < T[4][0][0].length; j++) {
+                if (T[rnd][rotate][t][j] != 0) {
+
+                    getX = t * UNIC + 6 * UNIC + x;
+                    getY = j * UNIC + y;
+
+                    for (ArrayList<Integer> tt : arrayList) {
+                        for (int i = 0; i < tt.size(); i++) {
+                            if (i != 0 && i % 2 == 0 && tt.get(i) == getX + 25 && tt.get(i + 1) == getY) {
+                                return true;
+                            }
+                        }
+                    }
                 }
             }
         }
+
         return false;
     }
 

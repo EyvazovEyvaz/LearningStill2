@@ -1,2 +1,7 @@
-package PACKAGE_NAME;public class Vehicle {
+public abstract class Vehicle {
+
+    public String brand;
+    public String model;
+
+    public abstract String startEngine();
 }

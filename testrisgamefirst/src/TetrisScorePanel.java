@@ -49,6 +49,8 @@ public class TetrisScorePanel extends JPanel {
     int clr2 = 0;
     int clr3 = 0;
 
+    static int scr = 0;
+
     int checkLoopForNextLael = 0;
     Random randomColors = new Random();
     public static final int[][][][] T = {//TTTT
@@ -412,7 +414,7 @@ public class TetrisScorePanel extends JPanel {
                     TetrisScorePanel.p--;
                     buttonResume.setBackground(Color.blue);
                     TetrisPanel.pause_cont = true;
-                    //clip.stop();
+                    clip.stop();
                 }
 
             }
