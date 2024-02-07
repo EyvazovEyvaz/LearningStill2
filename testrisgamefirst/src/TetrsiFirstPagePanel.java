@@ -47,6 +47,8 @@ public class TetrsiFirstPagePanel extends JPanel {
 
     static Clip clip;
 
+    BufferedImage image1;
+
     TetrsiFirstPagePanel() {
         this.setBounds(0, 0, FRAME_WIGHT, FRAME_HEIGHT);
         this.setVisible(true);
@@ -56,6 +58,12 @@ public class TetrsiFirstPagePanel extends JPanel {
         try {
             musicFirstPage();
         } catch (UnsupportedAudioFileException | IOException | LineUnavailableException e) {
+            throw new RuntimeException(e);
+        }
+
+        try {
+            image1 = ImageIO.read(new File("C:\\Users\\eyvaz\\Downloads\\FIRSTd.gif"));
+        } catch (IOException e) {
             throw new RuntimeException(e);
         }
     }
@@ -71,16 +79,8 @@ public class TetrsiFirstPagePanel extends JPanel {
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
 
-        BufferedImage image, image1;
-        try {
-            image = ImageIO.read(new File("C:\\Users\\eyvaz\\Downloads\\Tetris Master.jpg"));
-            image1 = ImageIO.read(new File("C:\\Users\\eyvaz\\Downloads\\firsttt.png"));
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
-        Image img = image1.getScaledInstance(getWidth()-100,getHeight()-150,4);
-        g.drawImage(image, 130, 50, this);
-        g.drawImage(image1, 100, 220, this);
+        Image img = image1.getScaledInstance(getWidth(),getHeight(),3);
+        g.drawImage(img, 0, 0, this);
 
         f1x1 += 50;
         f1x2 += 50;

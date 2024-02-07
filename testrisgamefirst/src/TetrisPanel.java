@@ -34,19 +34,13 @@ public class TetrisPanel extends JPanel {
             {{{1, 1, 1}, {0, 0, 0}, {0, 0, 0}}, {{1, 0, 0}, {1, 0, 0}, {1, 0, 0}}, {{0, 0, 0}, {0, 0, 0}, {0, 0, 0}}, {{0, 0, 0}, {0, 0, 0}, {0, 0, 0}}},
 
     };
-  /*  String str0 = "C:\\Users\\eyvaz\\OneDrive\\Pictures\\Screenshots\\tetris (9_5).png";
-    String str1 = "C:\\Users\\eyvaz\\OneDrive\\Pictures\\Screenshots\\tetris (9_2).png";
-    String str2 = "C:\\Users\\eyvaz\\OneDrive\\Pictures\\Screenshots\\tetris (9_3).png";
-    String str3 = "C:\\Users\\eyvaz\\OneDrive\\Pictures\\Screenshots\\tetris (9_6).png";
-    String str4 = "C:\\Users\\eyvaz\\OneDrive\\Pictures\\Screenshots\\tetris (9_4).png";
-    String str5 = "C:\\Users\\eyvaz\\OneDrive\\Pictures\\Screenshots\\tetris (9_!).png";*/
 
-    String str0 = "C:\\Users\\eyvaz\\OneDrive\\Pictures\\Screenshots\\tetris (5_0).png";
-    String str1 = "C:\\Users\\eyvaz\\OneDrive\\Pictures\\Screenshots\\tetris (5_1).png";
-    String str2 = "C:\\Users\\eyvaz\\OneDrive\\Pictures\\Screenshots\\tetris (5_2).png";
-    String str3 = "C:\\Users\\eyvaz\\OneDrive\\Pictures\\Screenshots\\tetris (5_3).png";
-    String str4 = "C:\\Users\\eyvaz\\OneDrive\\Pictures\\Screenshots\\tetris (5_4).png";
-    String str5 = "C:\\Users\\eyvaz\\OneDrive\\Pictures\\Screenshots\\tetris (5_5).png";
+    String str0 = "C:\\Users\\eyvaz\\OneDrive\\Pictures\\Screenshots\\block2.jpg";
+    String str1 = "C:\\Users\\eyvaz\\OneDrive\\Pictures\\Screenshots\\block3.jpg";
+    String str2 = "C:\\Users\\eyvaz\\OneDrive\\Pictures\\Screenshots\\block4.jpg";
+    String str3 = "C:\\Users\\eyvaz\\OneDrive\\Pictures\\Screenshots\\block5.jpg";
+    String str4 = "C:\\Users\\eyvaz\\OneDrive\\Pictures\\Screenshots\\block6.jpg";
+    String str5 = "C:\\Users\\eyvaz\\OneDrive\\Pictures\\Screenshots\\block11.jpg";
     static int y = -25;
     static int x = 0;
     public static boolean rotateCheck = false;
@@ -79,7 +73,7 @@ public class TetrisPanel extends JPanel {
 
 
         try {
-            image0 = ImageIO.read(new File("C:\\Users\\eyvaz\\Downloads\\x2.jpg"));
+            image0 = ImageIO.read(new File("C:\\Users\\eyvaz\\Downloads\\xx6.jpg"));
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
@@ -136,13 +130,13 @@ public class TetrisPanel extends JPanel {
         int fd3 = random.nextInt(0,255);
 
         g.setColor(new Color(fd1, fd2, fd3));
-        g.fill3DRect(0,0,400,10,true);
+        g.fill3DRect(0,0,400,7,true);
         g.setColor(new Color(fd1, fd2, fd3));
-        g.fill3DRect(0,540,400,540,true);
+        g.fill3DRect(0,543,400,543,true);
         g.setColor(new Color(fd1, fd2, fd3));
-        g.fill3DRect(0,0,10,540,true);
+        g.fill3DRect(0,0,7,543,true);
         g.setColor(new Color(fd1, fd2, fd3));
-        g.fill3DRect(390,0,10,540,true);
+        g.fill3DRect(393,0,7,543,true);
 
        long a =  System.currentTimeMillis();
 
@@ -306,7 +300,7 @@ public class TetrisPanel extends JPanel {
         /*for (int i = -1; i <= col; i++) {
             for (int j = -1; j <= row; j++) {
                 g.drawRect(i * UNIC, j * UNIC, UNIC, UNIC);
-                g.setColor(Color.cyan);
+                g.setColor(Color.GRAY);
             }
         }*/
 

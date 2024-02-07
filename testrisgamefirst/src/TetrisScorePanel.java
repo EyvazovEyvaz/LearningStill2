@@ -68,6 +68,8 @@ public class TetrisScorePanel extends JPanel {
 
     };
 
+    BufferedImage image0;
+
     TetrisScorePanel(int random) {
         this.setBounds(475, 50, FRAME_SCORE_WIGHT, FRAME_SCORE_HEIGHT);
         this.setBackground(Color.white);
@@ -78,6 +80,12 @@ public class TetrisScorePanel extends JPanel {
         this.setFocusable(true);
         this.setVisible(true);
         rnd = random;
+
+        try {
+            image0 = ImageIO.read(new File("C:\\Users\\eyvaz\\Downloads\\x1.jpg"));
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     public void scoreLabel(int clForNextLbl1, int clForNextLbl2, int clForNextLbl3) {
@@ -112,13 +120,6 @@ public class TetrisScorePanel extends JPanel {
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
 
-        BufferedImage image0;
-
-        try {
-            image0 = ImageIO.read(new File("C:\\Users\\eyvaz\\Downloads\\x1.jpg"));
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
        // Image img0 = image0.getScaledInstance(getWidth(), getHeight(), 5);
         g.drawImage(image0, 0, 0, this);
 
@@ -141,12 +142,12 @@ public class TetrisScorePanel extends JPanel {
                 g.setColor(Color.white);
             }
         }*/
-        String str0 = "C:\\Users\\eyvaz\\OneDrive\\Pictures\\Screenshots\\tetris (9_5).png";
-        String str1 = "C:\\Users\\eyvaz\\OneDrive\\Pictures\\Screenshots\\tetris (9_2).png";
-        String str2 = "C:\\Users\\eyvaz\\OneDrive\\Pictures\\Screenshots\\tetris (9_3).png";
-        String str3 = "C:\\Users\\eyvaz\\OneDrive\\Pictures\\Screenshots\\tetris (9_6).png";
-        String str4 = "C:\\Users\\eyvaz\\OneDrive\\Pictures\\Screenshots\\tetris (9_4).png";
-        String str5 = "C:\\Users\\eyvaz\\OneDrive\\Pictures\\Screenshots\\tetris (9_!).png";
+        String str0 = "C:\\Users\\eyvaz\\OneDrive\\Pictures\\Screenshots\\block2.jpg";
+        String str1 = "C:\\Users\\eyvaz\\OneDrive\\Pictures\\Screenshots\\block3.jpg";
+        String str2 = "C:\\Users\\eyvaz\\OneDrive\\Pictures\\Screenshots\\block4.jpg";
+        String str3 = "C:\\Users\\eyvaz\\OneDrive\\Pictures\\Screenshots\\block5.jpg";
+        String str4 = "C:\\Users\\eyvaz\\OneDrive\\Pictures\\Screenshots\\block6.jpg";
+        String str5 = "C:\\Users\\eyvaz\\OneDrive\\Pictures\\Screenshots\\block11.jpg";
 
         for (int i = 0; i < T[4].length - 1; i++) {
             for (int j = 0; j < T[4][0][0].length; j++) {

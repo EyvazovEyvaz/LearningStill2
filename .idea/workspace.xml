@@ -4,14 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9aa372d7-6a7f-4006-b9fc-40f79ba27c2b" name="Changes" comment="atLast1">
+    <list default="true" id="9aa372d7-6a7f-4006-b9fc-40f79ba27c2b" name="Changes" comment="atLast2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rich/production/testrisgamefirst/TetrisPanel$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/rich/production/testrisgamefirst/TetrisPanel$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rich/production/testrisgamefirst/TetrisPanel$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/rich/production/testrisgamefirst/TetrisPanel$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rich/production/testrisgamefirst/TetrisPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/rich/production/testrisgamefirst/TetrisPanel.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rich/production/testrisgamefirst/TetrisScorePanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/rich/production/testrisgamefirst/TetrisScorePanel.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testrisgamefirst/src/TetrisPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/testrisgamefirst/src/TetrisPanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testrisgamefirst/src/TetrisScorePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/testrisgamefirst/src/TetrisScorePanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testrisgamefirst/src/TetrsiFirstPagePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/testrisgamefirst/src/TetrsiFirstPagePanel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,7 +165,15 @@
       <option name="project" value="LOCAL" />
       <updated>1707160126261</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="atLast2">
+      <option name="closed" value="true" />
+      <created>1707165747284</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1707165747284</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -200,14 +205,15 @@
     <MESSAGE value="lastChance1" />
     <MESSAGE value="lastChance2" />
     <MESSAGE value="atLast1" />
-    <option name="LAST_COMMIT_MESSAGE" value="atLast1" />
+    <MESSAGE value="atLast2" />
+    <option name="LAST_COMMIT_MESSAGE" value="atLast2" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/testrisgamefirst/src/TetrsiFirstPagePanel.java</url>
-          <line>63</line>
+          <line>71</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
