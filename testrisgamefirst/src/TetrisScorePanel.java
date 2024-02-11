@@ -86,7 +86,7 @@ public class TetrisScorePanel extends JPanel {
         rnd = random;
 
         try {
-            image0 = ImageIO.read(new File("C:\\Users\\eyvaz\\Downloads\\x2.jpg"));
+            image0 = ImageIO.read(new File("C:\\Users\\eyvaz\\OneDrive\\Desktop\\TETRIS\\GamePictures\\ScorePanelBackPicture.jpg"));
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
@@ -136,12 +136,12 @@ public class TetrisScorePanel extends JPanel {
                 g.setColor(Color.white);
             }
         }*/
-        String str0 = "C:\\Users\\eyvaz\\OneDrive\\Pictures\\Screenshots\\block2.jpg";
-        String str1 = "C:\\Users\\eyvaz\\OneDrive\\Pictures\\Screenshots\\block3.jpg";
-        String str2 = "C:\\Users\\eyvaz\\OneDrive\\Pictures\\Screenshots\\block4.jpg";
-        String str3 = "C:\\Users\\eyvaz\\OneDrive\\Pictures\\Screenshots\\block5.jpg";
-        String str4 = "C:\\Users\\eyvaz\\OneDrive\\Pictures\\Screenshots\\block6.jpg";
-        String str5 = "C:\\Users\\eyvaz\\OneDrive\\Pictures\\Screenshots\\block11.jpg";
+        String str0 = "C:\\Users\\eyvaz\\OneDrive\\Desktop\\TETRIS\\GamePictures\\block1.jpg";
+        String str1 = "C:\\Users\\eyvaz\\OneDrive\\Desktop\\TETRIS\\GamePictures\\block2.jpg";
+        String str2 = "C:\\Users\\eyvaz\\OneDrive\\Desktop\\TETRIS\\GamePictures\\block3.jpg";
+        String str3 = "C:\\Users\\eyvaz\\OneDrive\\Desktop\\TETRIS\\GamePictures\\block4.jpg";
+        String str4 = "C:\\Users\\eyvaz\\OneDrive\\Desktop\\TETRIS\\GamePictures\\block5.jpg";
+        String str5 = "C:\\Users\\eyvaz\\OneDrive\\Desktop\\TETRIS\\GamePictures\\block6.jpg";
 
         for (int i = 0; i < T[4].length - 1; i++) {
             for (int j = 0; j < T[4][0][0].length; j++) {
@@ -228,7 +228,7 @@ public class TetrisScorePanel extends JPanel {
         buttonRight.setBounds(150, 300, allbuttonsSize, allbuttonsSize);
         buttonRight.setBackground(Color.black);
 
-        ImageIcon imageIcon = new ImageIcon("C:\\Users\\eyvaz\\Downloads\\tetris (2).png");
+        ImageIcon imageIcon = new ImageIcon("C:\\Users\\eyvaz\\OneDrive\\Desktop\\TETRIS\\GamePictures\\forRightButtonPicture.png");
         Image image = imageIcon.getImage();
         Image img = image.getScaledInstance(buttonRight.getWidth(), buttonRight.getHeight(), 5);
         buttonRight.setIcon(new ImageIcon(img));
@@ -274,7 +274,7 @@ public class TetrisScorePanel extends JPanel {
         buttonLeft.setBounds(30, 300, allbuttonsSize, allbuttonsSize);
         buttonLeft.setBackground(Color.black);
 
-        ImageIcon imageIcon = new ImageIcon("C:\\Users\\eyvaz\\Downloads\\block.png");
+        ImageIcon imageIcon = new ImageIcon("C:\\Users\\eyvaz\\OneDrive\\Desktop\\TETRIS\\GamePictures\\forLeftButtonPicture.png");
         Image image = imageIcon.getImage();
         Image img = image.getScaledInstance(buttonLeft.getWidth(), buttonLeft.getHeight(), 5);
         buttonLeft.setIcon(new ImageIcon(img));
@@ -319,7 +319,7 @@ public class TetrisScorePanel extends JPanel {
         buttonDown.setBounds(90, 360, allbuttonsSize, allbuttonsSize);
         buttonDown.setBackground(Color.black);
 
-        ImageIcon imageIcon = new ImageIcon("C:\\Users\\eyvaz\\Downloads\\tetris (3).png");
+        ImageIcon imageIcon = new ImageIcon("C:\\Users\\eyvaz\\OneDrive\\Desktop\\TETRIS\\GamePictures\\forDownButtonPicture.png");
         Image image = imageIcon.getImage();
         Image img = image.getScaledInstance(buttonDown.getWidth(), buttonDown.getHeight(), 5);
         buttonDown.setIcon(new ImageIcon(img));
@@ -350,7 +350,7 @@ public class TetrisScorePanel extends JPanel {
         buttonReset.setBounds(150, 420, allbuttonsSize, allbuttonsSize);
         buttonReset.setBackground(Color.black);
 
-        ImageIcon imageIcon = new ImageIcon("C:\\Users\\eyvaz\\Downloads\\tetris (4).png");
+        ImageIcon imageIcon = new ImageIcon("C:\\Users\\eyvaz\\OneDrive\\Desktop\\TETRIS\\GamePictures\\forResetButtonPicture.png");
         Image image = imageIcon.getImage();
         Image img = image.getScaledInstance(buttonReset.getWidth(), buttonReset.getHeight(), 5);
         buttonReset.setIcon(new ImageIcon(img));
@@ -385,7 +385,7 @@ public class TetrisScorePanel extends JPanel {
         buttonResume.setBounds(30, 420, allbuttonsSize, allbuttonsSize);
         buttonResume.setBackground(Color.black);
 
-        ImageIcon imageIcon = new ImageIcon("C:\\Users\\eyvaz\\Downloads\\tetris.png");
+        ImageIcon imageIcon = new ImageIcon("C:\\Users\\eyvaz\\OneDrive\\Desktop\\TETRIS\\GamePictures\\forStartResumeButtonPicture.png");
         Image image = imageIcon.getImage();
         Image img = image.getScaledInstance(buttonResume.getWidth(), buttonResume.getHeight(), 5);
         buttonResume.setIcon(new ImageIcon(img));
@@ -420,7 +420,7 @@ public class TetrisScorePanel extends JPanel {
 
     public static void music() throws UnsupportedAudioFileException, IOException, LineUnavailableException {
 
-        File file = new File("C:\\Users\\eyvaz\\Downloads\\0386bb84-04b1-4ce2-a2d0-fc5b9dcefa16.wav");
+        File file = new File("C:\\Users\\eyvaz\\OneDrive\\Desktop\\TETRIS\\GameMuiscs\\backGroundMusic.wav");
         AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(file);
         clip = AudioSystem.getClip();
         clip.open(audioInputStream);
@@ -432,7 +432,7 @@ public class TetrisScorePanel extends JPanel {
     public static void musicForReset() throws UnsupportedAudioFileException, IOException, LineUnavailableException {
 
         if (!TetrisPanel.pause_cont){
-            File file = new File("C:\\Users\\eyvaz\\Downloads\\reset3.wav");
+            File file = new File("C:\\Users\\eyvaz\\OneDrive\\Desktop\\TETRIS\\GameMuiscs\\resetMusic.wav");
             AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(file);
             Clip clip = AudioSystem.getClip();
             clip.open(audioInputStream);
@@ -446,7 +446,7 @@ public class TetrisScorePanel extends JPanel {
     public static void musicForStone() throws LineUnavailableException, UnsupportedAudioFileException, IOException {
 
         if (!TetrisPanel.pause_cont){
-            File file = new File("C:\\Users\\eyvaz\\Downloads\\musicForButtons.wav");
+            File file = new File("C:\\Users\\eyvaz\\OneDrive\\Desktop\\TETRIS\\GameMuiscs\\rotateRightLeftMusic.wav");
             AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(file);
             Clip clip = AudioSystem.getClip();
             clip.open(audioInputStream);
@@ -461,7 +461,7 @@ public class TetrisScorePanel extends JPanel {
         buttonRotate.setBounds(30, 240, allbuttonsSize, allbuttonsSize);
         buttonRotate.setBackground(Color.black);
 
-        ImageIcon imageIcon = new ImageIcon("C:\\Users\\eyvaz\\Downloads\\tetris (8).png");
+        ImageIcon imageIcon = new ImageIcon("C:\\Users\\eyvaz\\OneDrive\\Desktop\\TETRIS\\GamePictures\\rotateButtonPicture.png");
         Image image = imageIcon.getImage();
         Image img = image.getScaledInstance(buttonRotate.getWidth(), buttonRotate.getHeight(), 5);
         buttonRotate.setIcon(new ImageIcon(img));

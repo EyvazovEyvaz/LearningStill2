@@ -35,12 +35,12 @@ public class TetrisPanel extends JPanel {
 
     };
 
-    String str0 = "C:\\Users\\eyvaz\\OneDrive\\Pictures\\Screenshots\\block2.jpg";
-    String str1 = "C:\\Users\\eyvaz\\OneDrive\\Pictures\\Screenshots\\block3.jpg";
-    String str2 = "C:\\Users\\eyvaz\\OneDrive\\Pictures\\Screenshots\\block4.jpg";
-    String str3 = "C:\\Users\\eyvaz\\OneDrive\\Pictures\\Screenshots\\block5.jpg";
-    String str4 = "C:\\Users\\eyvaz\\OneDrive\\Pictures\\Screenshots\\block6.jpg";
-    String str5 = "C:\\Users\\eyvaz\\OneDrive\\Pictures\\Screenshots\\block11.jpg";
+    String str0 = "C:\\Users\\eyvaz\\OneDrive\\Desktop\\TETRIS\\GamePictures\\block1.jpg";
+    String str1 = "C:\\Users\\eyvaz\\OneDrive\\Desktop\\TETRIS\\GamePictures\\block2.jpg";
+    String str2 = "C:\\Users\\eyvaz\\OneDrive\\Desktop\\TETRIS\\GamePictures\\block3.jpg";
+    String str3 = "C:\\Users\\eyvaz\\OneDrive\\Desktop\\TETRIS\\GamePictures\\block4.jpg";
+    String str4 = "C:\\Users\\eyvaz\\OneDrive\\Desktop\\TETRIS\\GamePictures\\block5.jpg";
+    String str5 = "C:\\Users\\eyvaz\\OneDrive\\Desktop\\TETRIS\\GamePictures\\block6.jpg";
     static int y = -25;
     static int x = 0;
     public static boolean rotateCheck = false;
@@ -73,7 +73,7 @@ public class TetrisPanel extends JPanel {
 
 
         try {
-            image0 = ImageIO.read(new File("C:\\Users\\eyvaz\\Downloads\\xx22.jpg"));
+            image0 = ImageIO.read(new File("C:\\Users\\eyvaz\\OneDrive\\Desktop\\TETRIS\\GamePictures\\TetrisGamePanelBackPicture.jpg"));
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
@@ -312,7 +312,7 @@ public class TetrisPanel extends JPanel {
 
     public void musicPanel() throws UnsupportedAudioFileException, IOException, LineUnavailableException {
 
-        File file = new File("C:\\Users\\eyvaz\\Downloads\\f68c40b3-1185-46a3-82ff-4dc4ffb04942.wav");
+        File file = new File("C:\\Users\\eyvaz\\OneDrive\\Desktop\\TETRIS\\GameMuiscs\\blockJoinMusic.wav");
         AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(file);
         Clip clip = AudioSystem.getClip();
         clip.open(audioInputStream);
@@ -569,7 +569,7 @@ public class TetrisPanel extends JPanel {
         BufferedImage imageOverGame;
 
         try {
-            imageOverGame = ImageIO.read(new File("C:\\Users\\eyvaz\\Downloads\\gameOver - Copy.jpg"));
+            imageOverGame = ImageIO.read(new File("C:\\Users\\eyvaz\\OneDrive\\Desktop\\TETRIS\\GamePictures\\tetrisGameOverPicture.jpg"));
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
@@ -581,7 +581,7 @@ public class TetrisPanel extends JPanel {
 
     public void musicGameOver() throws UnsupportedAudioFileException, IOException, LineUnavailableException {
 
-        File file = new File("C:\\Users\\eyvaz\\Downloads\\928daa61-6297-4a75-8e12-bfac5aff4ef7.wav");
+        File file = new File("C:\\Users\\eyvaz\\OneDrive\\Desktop\\TETRIS\\GameMuiscs\\gameOverMusic.wav");
         AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(file);
         Clip clip = AudioSystem.getClip();
         clip.open(audioInputStream);
@@ -600,7 +600,7 @@ public class TetrisPanel extends JPanel {
         JButton button = new JButton();
         button.setBounds(75, 0, 40, 40);
         button.setBackground(Color.WHITE);
-        ImageIcon imageIcon = new ImageIcon("C:\\Users\\eyvaz\\OneDrive\\Pictures\\Screenshots\\yes1.png");
+        ImageIcon imageIcon = new ImageIcon("C:\\Users\\eyvaz\\OneDrive\\Desktop\\TETRIS\\GamePictures\\afteGameOverYesButtonPicture.png");
         Image image = imageIcon.getImage();
         Image img = image.getScaledInstance(button.getWidth(), button.getHeight(), 4);
         button.setIcon(new ImageIcon(img));
@@ -609,7 +609,7 @@ public class TetrisPanel extends JPanel {
         JButton buttonj = new JButton();
         buttonj.setBounds(185, 0, 40, 40);
         buttonj.setBackground(Color.WHITE);
-        ImageIcon imageIcon1 = new ImageIcon("C:\\Users\\eyvaz\\OneDrive\\Pictures\\Screenshots\\yes.png");
+        ImageIcon imageIcon1 = new ImageIcon("C:\\Users\\eyvaz\\OneDrive\\Desktop\\TETRIS\\GamePictures\\afteGameOverNoButtonPicture.png");
         Image image1 = imageIcon1.getImage().getScaledInstance(buttonj.getWidth(), buttonj.getHeight(), 4);
         buttonj.setIcon(new ImageIcon(image1));
         label.add(buttonj);
@@ -697,7 +697,7 @@ public class TetrisPanel extends JPanel {
     }
     public void musicForPoint() throws UnsupportedAudioFileException, IOException, LineUnavailableException {
 
-        File file = new File("C:\\Users\\eyvaz\\Downloads\\clearLines.wav");
+        File file = new File("C:\\Users\\eyvaz\\OneDrive\\Desktop\\TETRIS\\GameMuiscs\\clearLinesMusic.wav");
         AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(file);
         Clip clip = AudioSystem.getClip();
         clip.open(audioInputStream);
