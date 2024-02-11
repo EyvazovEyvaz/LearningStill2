@@ -79,8 +79,8 @@ public class TetrsiFirstPagePanel extends JPanel {
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
 
-        Image img = image1.getScaledInstance(getWidth(),getHeight(),3);
-        g.drawImage(img, 0, 0, this);
+        Image img = image1.getScaledInstance(getWidth()-100,getHeight()-100,3);
+        g.drawImage(img, 50, 50, this);
 
         f1x1 += 50;
         f1x2 += 50;

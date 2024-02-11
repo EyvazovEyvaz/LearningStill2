@@ -6,6 +6,7 @@ public class Main {
 
         createObjectFirstPage1();
 
+
     }
     public static void createObjectFirstPage1(){
         TetrisFirstPageFrame tetrisFirstPageFrame = new TetrisFirstPageFrame();

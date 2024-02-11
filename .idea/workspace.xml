@@ -4,11 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9aa372d7-6a7f-4006-b9fc-40f79ba27c2b" name="Changes" comment="atLast2">
+    <list default="true" id="9aa372d7-6a7f-4006-b9fc-40f79ba27c2b" name="Changes" comment="atLast3">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rich/production/testrisgamefirst/Main$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/rich/production/testrisgamefirst/Main$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rich/production/testrisgamefirst/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/rich/production/testrisgamefirst/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rich/production/testrisgamefirst/TetrisPanel$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/rich/production/testrisgamefirst/TetrisPanel$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rich/production/testrisgamefirst/TetrisPanel$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/rich/production/testrisgamefirst/TetrisPanel$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rich/production/testrisgamefirst/TetrisPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/rich/production/testrisgamefirst/TetrisPanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rich/production/testrisgamefirst/TetrisScorePanel$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/rich/production/testrisgamefirst/TetrisScorePanel$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rich/production/testrisgamefirst/TetrisScorePanel$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/rich/production/testrisgamefirst/TetrisScorePanel$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rich/production/testrisgamefirst/TetrisScorePanel$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/rich/production/testrisgamefirst/TetrisScorePanel$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rich/production/testrisgamefirst/TetrisScorePanel$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/rich/production/testrisgamefirst/TetrisScorePanel$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rich/production/testrisgamefirst/TetrisScorePanel$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/rich/production/testrisgamefirst/TetrisScorePanel$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rich/production/testrisgamefirst/TetrisScorePanel$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/rich/production/testrisgamefirst/TetrisScorePanel$6.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rich/production/testrisgamefirst/TetrisScorePanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/rich/production/testrisgamefirst/TetrisScorePanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rich/production/testrisgamefirst/TetrsiFirstPagePanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/rich/production/testrisgamefirst/TetrsiFirstPagePanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testrisgamefirst/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/testrisgamefirst/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testrisgamefirst/src/TetrisPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/testrisgamefirst/src/TetrisPanel.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testrisgamefirst/src/TetrisScorePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/testrisgamefirst/src/TetrisScorePanel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testrisgamefirst/src/TetrsiFirstPagePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/testrisgamefirst/src/TetrsiFirstPagePanel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -173,7 +186,15 @@
       <option name="project" value="LOCAL" />
       <updated>1707165747284</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="atLast3">
+      <option name="closed" value="true" />
+      <created>1707340221848</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1707340221848</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -206,7 +227,8 @@
     <MESSAGE value="lastChance2" />
     <MESSAGE value="atLast1" />
     <MESSAGE value="atLast2" />
-    <option name="LAST_COMMIT_MESSAGE" value="atLast2" />
+    <MESSAGE value="atLast3" />
+    <option name="LAST_COMMIT_MESSAGE" value="atLast3" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

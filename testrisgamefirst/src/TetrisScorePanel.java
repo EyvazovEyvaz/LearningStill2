@@ -53,6 +53,8 @@ public class TetrisScorePanel extends JPanel {
 
     int checkLoopForNextLael = 0;
     Random randomColors = new Random();
+
+    static int score = 0;
     public static final int[][][][] T = {//TTTT
             {{{1, 0, 0}, {1, 1, 0}, {1, 0, 0}}, {{0, 0, 0}, {0, 1, 0}, {1, 1, 1}}, {{0, 0, 1}, {0, 1, 1}, {0, 0, 1}}, {{1, 1, 1}, {0, 1, 0}, {0, 0, 0}},},
             //LLLL
@@ -69,6 +71,8 @@ public class TetrisScorePanel extends JPanel {
     };
 
     BufferedImage image0;
+    Image img0;
+    JLabel scoreL = new JLabel();
 
     TetrisScorePanel(int random) {
         this.setBounds(475, 50, FRAME_SCORE_WIGHT, FRAME_SCORE_HEIGHT);
@@ -82,10 +86,12 @@ public class TetrisScorePanel extends JPanel {
         rnd = random;
 
         try {
-            image0 = ImageIO.read(new File("C:\\Users\\eyvaz\\Downloads\\x1.jpg"));
+            image0 = ImageIO.read(new File("C:\\Users\\eyvaz\\Downloads\\x2.jpg"));
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
+
+        img0 = image0.getScaledInstance(getWidth(), getHeight(), 4);
     }
 
     public void scoreLabel(int clForNextLbl1, int clForNextLbl2, int clForNextLbl3) {
@@ -107,8 +113,7 @@ public class TetrisScorePanel extends JPanel {
 
     public void score() {
 
-        JLabel scoreL = new JLabel();
-        scoreL.setText("0");
+        scoreL.setText(String.valueOf(score));
         scoreL.setBounds(160, -10, 100, 100);
         scoreL.setFont(new Font("BOLD", Font.BOLD, 60));
         scoreL.setForeground(Color.white);
@@ -121,21 +126,10 @@ public class TetrisScorePanel extends JPanel {
         super.paintComponent(g);
 
        // Image img0 = image0.getScaledInstance(getWidth(), getHeight(), 5);
-        g.drawImage(image0, 0, 0, this);
+        g.drawImage(img0, 0, 0, this);
 
+        scoreL.setText(String.valueOf(score));
 
-        /*ufferedImage image, image2;
-        try {
-            image = ImageIO.read(new File("C:\\Users\\eyvaz\\OneDrive\\Desktop\\images\\22.png"));
-            image2 = ImageIO.read(new File("C:\\Users\\eyvaz\\Downloads\\Solid_white_bordered.svg.png"));
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
-        Image img = image.getScaledInstance(250,150,5);
-        g.drawImage(img,0,75,this);
-
-        Image img2 = image2.getScaledInstance(250,60,5);
-        g.drawImage(img2,0,10,this);*/
         /*for(int i=-1; i<=colS; i++){
             for(int j=-1; j<=rowS; j++){
                 g.drawRect(i*UNICS, j*UNICS+100, UNICS,UNICS);
@@ -258,7 +252,7 @@ public class TetrisScorePanel extends JPanel {
                         m1 += 50;
                     }
                     if (TetrisPanel.rnd == 5 && TetrisPanel.rotate == 1) {
-                        m1 -= 25;
+                        m1 -= 50;
                     }
                     if (TetrisPanel.rnd == 2 && TetrisPanel.rotate == 1) {
                         m1 -= 25;

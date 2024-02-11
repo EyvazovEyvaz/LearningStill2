@@ -55,12 +55,12 @@ public class TetrisPanel extends JPanel {
     ArrayList<Integer> arrayListChild;
     static int rand;
 
-    static int speed = 100;
+    static int speed = 140;
 
     int getXline = 0;
     int getYline = 0;
 
-    Color a = Color.white;
+    Color a = Color.black;
 
     Image img0;
     BufferedImage image0;
@@ -73,11 +73,11 @@ public class TetrisPanel extends JPanel {
 
 
         try {
-            image0 = ImageIO.read(new File("C:\\Users\\eyvaz\\Downloads\\xx6.jpg"));
+            image0 = ImageIO.read(new File("C:\\Users\\eyvaz\\Downloads\\xx22.jpg"));
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
-         img0 = image0.getScaledInstance(getWidth(), getHeight(), 5);
+         img0 = image0.getScaledInstance(getWidth(), getHeight(), 4);
 
     }
 
@@ -99,7 +99,7 @@ public class TetrisPanel extends JPanel {
             rotate = 0;
             rnd = rand;
             x = 0;
-            speed = 100;
+            speed = 140;
         }else {
             if (y == -25) {
                 randommm();
@@ -122,6 +122,8 @@ public class TetrisPanel extends JPanel {
         g.drawImage(img0, 0, 0, this);
 
         new TetrisScorePanel(rand);
+
+        checkisFillallXcoor();
 
         Random random = new Random();
 
@@ -231,7 +233,6 @@ public class TetrisPanel extends JPanel {
 
                         getX = c * UNIC + 6 * UNIC + x;
                         getY = z * UNIC + y;
-
                         if (y==FRAME_HEIGHT-50){
                             if (rnd == 1 && rotate == 0 || rotate == 1 || rotate == 2 || rotate == 3) {
                                 getY -= 25;
@@ -245,14 +246,8 @@ public class TetrisPanel extends JPanel {
                             if (rnd == 0 && rotate == 3) {
                                 getY -= 25;
                             }
-                            if (rnd == 2 && rotate == 0) {
-                                getY -=25;
-                            }
                             if (rnd == 3 && rotate == 1) {
                                 getY += 25;
-                            }
-                            if (rnd == 2 && rotate == 1) {
-                                getY -=25;
                             }
                             if (rnd == 3 && rotate == 1) {
                                 getY -= 25;
@@ -268,7 +263,6 @@ public class TetrisPanel extends JPanel {
 
         if (y == FRAME_HEIGHT-50 || test()) {
             arrayList.add(arrayListChild);
-            System.out.println(arrayListChild);
         }
 
         try {
@@ -647,27 +641,69 @@ public class TetrisPanel extends JPanel {
         int[] chAllForYcoor = {0, 25, 50, 75, 100, 125, 150, 175, 200, 225, 250, 275, 300, 325, 350, 375, 400,
                                425, 450, 475, 500, 525};
 
-        int sum = 0;
-        for (int k : chAllForYcoor) {
-            int[] chcAllXcoor = new int[]{0, 25, 50, 75, 100, 125, 150, 175, 200, 225, 250, 275, 300, 325, 350, 375, 400};
-            sum =0;
-            for (ArrayList<Integer> arr : arrayList) {
-                for (int j = 0; j < arr.size(); j++) {
-                    for (int xc = 0; xc < chcAllXcoor.length; xc++) {
-                        if (j != 0 && j % 2 == 0 && k == arr.get(j + 1) && chcAllXcoor[xc] == arr.get(j) && chcAllXcoor[xc] >= 0) {
-                            chcAllXcoor[xc] += -1000;
-                            sum++;
-                            if (sum==16){
-                                TetrisScorePanel.scr++;
-                                sum =0;
+        for (Integer ycoor: chAllForYcoor){
+            int xc = 0;
+            int[] chcAllXcoor = {0, 25, 50, 75, 100, 125, 150, 175, 200, 225, 250, 275, 300, 325, 350, 375, 400};
+            for (ArrayList<Integer> arrrcoor: arrayList){
+                for (int i=0; i<arrrcoor.size(); i++){
+                    if (i!=1 && i % 2 == 1){
+                        if (ycoor.equals(arrrcoor.get(i))){
+                            for (int n=0; n<chcAllXcoor.length; n++){
+                                if (arrrcoor.get(i-1)==chcAllXcoor[n]){
+                                    xc++;
+                                    chcAllXcoor[n] *= -1;
+                                }
                             }
                         }
                     }
                 }
             }
 
+            if (xc==16){
+                System.out.println(ycoor);
+                for (ArrayList<Integer> arrrcoor: arrayList){
+                    for (int i=0; i<arrrcoor.size(); i++){
+                        if (i!=1 && i % 2 == 1){
+                            if (ycoor.equals(arrrcoor.get(i))){
+                                arrrcoor.set(i,-25);
+                                arrrcoor.set(i-1,-25);
+                            }
+                        }
+                    }
+                }
+                switchAllBlockes(ycoor);
+                TetrisScorePanel.score++;
+                try {
+                    musicForPoint();
+                } catch (UnsupportedAudioFileException | IOException | LineUnavailableException e) {
+                    throw new RuntimeException(e);
+                }
+            }
         }
 
-        System.out.println(sum);
+    }
+
+    public void switchAllBlockes(int u){
+
+        for (ArrayList<Integer> arrrcoor: arrayList){
+            for (int i=0; i<arrrcoor.size(); i++){
+                if (i!=1 && i % 2 == 1){
+                    if (u > arrrcoor.get(i)){
+                        arrrcoor.set(i, arrrcoor.get(i)+25);
+                    }
+                }
+            }
+        }
+    }
+    public void musicForPoint() throws UnsupportedAudioFileException, IOException, LineUnavailableException {
+
+        File file = new File("C:\\Users\\eyvaz\\Downloads\\clearLines.wav");
+        AudioInputStream audioInputStream = AudioSystem.getAudioInputStream(file);
+        Clip clip = AudioSystem.getClip();
+        clip.open(audioInputStream);
+        FloatControl floatControl = (FloatControl) clip.getControl(FloatControl.Type.MASTER_GAIN);
+        floatControl.setValue(6.0f);
+        clip.start();
+
     }
 }
