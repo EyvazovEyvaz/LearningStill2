@@ -65,6 +65,10 @@ public class TetrisPanel extends JPanel {
     Image img0;
     BufferedImage image0;
 
+    public static boolean checkPoint = false;
+   static int chckPointX = 0;
+    static int chckPointY = 0;
+
     TetrisPanel() {
         this.setBounds(55, 50, FRAME_WIGHT, FRAME_HEIGHT);
         this.setVisible(true);
@@ -100,6 +104,7 @@ public class TetrisPanel extends JPanel {
             rnd = rand;
             x = 0;
             speed = 140;
+
         }else {
             if (y == -25) {
                 randommm();
@@ -298,6 +303,11 @@ public class TetrisPanel extends JPanel {
             }
         }*/
 
+
+    }
+    public void grap(Graphics g, int xs, int ys){
+        g.setColor(Color.BLUE);
+        g.fill3DRect(ys,xs,2, 5, true);
     }
 
     public void pauseLabel(Graphics g) {
@@ -660,11 +670,21 @@ public class TetrisPanel extends JPanel {
             }
 
             if (xc==16){
-                System.out.println(ycoor);
+                checkPoint = true;
                 for (ArrayList<Integer> arrrcoor: arrayList){
                     for (int i=0; i<arrrcoor.size(); i++){
                         if (i!=1 && i % 2 == 1){
                             if (ycoor.equals(arrrcoor.get(i))){
+                                arrrcoor.set(i,-25);
+                                arrrcoor.set(i-1,-25);
+                                chckPointY = arrrcoor.get(i);
+                                chckPointX = arrrcoor.get(i-1);
+                            }
+                            if (ycoor-25 == arrrcoor.get(i)){
+                                arrrcoor.set(i,-25);
+                                arrrcoor.set(i-1,-25);
+                            }
+                            if (ycoor-50 == arrrcoor.get(i)){
                                 arrrcoor.set(i,-25);
                                 arrrcoor.set(i-1,-25);
                             }
@@ -672,12 +692,14 @@ public class TetrisPanel extends JPanel {
                     }
                 }
                 switchAllBlockes(ycoor);
-                TetrisScorePanel.score++;
+                TetrisScorePanel.score +=10;
                 try {
                     musicForPoint();
                 } catch (UnsupportedAudioFileException | IOException | LineUnavailableException e) {
                     throw new RuntimeException(e);
                 }
+            }else{
+                checkPoint = false;
             }
         }
 
@@ -689,7 +711,7 @@ public class TetrisPanel extends JPanel {
             for (int i=0; i<arrrcoor.size(); i++){
                 if (i!=1 && i % 2 == 1){
                     if (u > arrrcoor.get(i)){
-                        arrrcoor.set(i, arrrcoor.get(i)+25);
+                        arrrcoor.set(i, arrrcoor.get(i)+75);
                     }
                 }
             }
