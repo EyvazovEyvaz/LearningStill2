@@ -1,7 +1,10 @@
-import javax.swing.*;
 import java.io.*;
-import java.sql.SQLOutput;
+import java.text.DateFormat;
+import java.time.Clock;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.Scanner;
 
 public class Main {
@@ -10,11 +13,19 @@ public class Main {
     public static void main(String[] args) throws IOException, ClassNotFoundException {
 
        // Menu.menu()
+       // menuForCollectionTask();
+       // frequent();
+       // sort();
+       // unic();
 
-        menuForCollectionTask();
-        frequent();
-        sort();
-        unic();
+
+        LocalDateTime localDateTime = LocalDateTime.now();
+
+        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss");
+
+
+
+
     }
     public static void chooseForMenu(){
 
@@ -130,7 +141,6 @@ public class Main {
 
     }
 
-
     public static void frequent(){
 
         ArrayList<Integer> arrayList = new ArrayList<>();
@@ -171,6 +181,7 @@ public class Main {
 
         arrayList.add(1);
         arrayList.add(2);
+        arrayList.add(3);
         arrayList.add(3);
         arrayList.add(3);
         arrayList.add(5);

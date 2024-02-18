@@ -21,17 +21,17 @@ public class TetrisPanel extends JPanel {
     public static final int row = FRAME_HEIGHT / UNIC;
 
     public static final int[][][][] T = {//TTTT
-            {{{1, 0, 0}, {1, 1, 0}, {1, 0, 0}}, {{0, 0, 0}, {0, 1, 0}, {1, 1, 1}}, {{0, 0, 1}, {0, 1, 1}, {0, 0, 1}}, {{1, 1, 1}, {0, 1, 0}, {0, 0, 0}},},
+            {{{1, 0, 0, 0}, {1, 1, 0, 0}, {1, 0, 0, 0}, {0, 0, 0, 0}}, {{0, 1, 0, 0}, {1, 1, 1, 0}, {0, 0, 0, 0}, {0, 0, 0, 0}}, {{0, 0, 1, 0}, {0, 1, 1, 0}, {0, 0, 1, 0}, {0, 0, 0, 0}}, {{1, 1, 1, 0}, {0, 1, 0, 0}, {0, 0, 0, 0}, {0, 0, 0, 0}}},
             //LLLL
-            {{{1, 1, 1}, {0, 0, 1}, {0, 0, 0}}, {{0, 0, 1}, {0, 0, 1}, {0, 1, 1}}, {{0, 0, 0}, {1, 0, 0}, {1, 1, 1}}, {{0, 1, 1}, {0, 0, 1}, {0, 0, 1}},},
+            {{{0, 0, 0, 0},{1, 1, 1, 0}, {0, 0, 1, 0}, {0, 0, 0, 0}}, {{0, 0, 1, 0}, {0, 0, 1, 0}, {0, 1, 1, 0}, {0, 0, 0, 0}}, {{0, 0, 0, 0}, {1, 0, 0, 0}, {1, 1, 1, 0}, {0, 0, 0, 0}}, {{0, 1, 1, 0}, {0, 0, 1, 0}, {0, 0, 1, 0}, {0, 0, 0, 0}}},
             //ZZZZ
-            {{{1, 0, 0}, {1, 1, 0}, {0, 1, 0}}, {{0, 0, 0}, {0, 1, 1}, {1, 1, 0}}, {{0, 0, 0}, {0, 0, 0}, {0, 0, 0}}, {{0, 0, 0}, {0, 0, 0}, {0, 0, 0}}},
+            {{{1, 0, 0, 0}, {1, 1, 0, 0}, {0, 1, 0, 0}, {0, 0, 0, 0}}, {{0, 0, 0, 0}, {0, 1, 1, 0}, {1, 1, 0, 0}, {0, 0, 0, 0}}, {{0, 0, 0, 0}, {0, 0, 0, 0}, {0, 0, 0, 0}, {0, 0, 0, 0}}, {{0, 0, 0, 0}, {0, 0, 0, 0}, {0, 0, 0, 0}, {0, 0, 0, 0}}},
             ///SSSS
-            {{{0, 1, 0}, {1, 1, 0}, {1, 0, 0}}, {{1, 1, 0}, {0, 1, 1}, {0, 0, 0}}, {{0, 0, 0}, {0, 0, 0}, {0, 0, 0}}, {{0, 0, 0}, {0, 0, 0}, {0, 0, 0}}},
+            {{{0, 1, 0, 0}, {1, 1, 0, 0}, {1, 0, 0, 0}, {0, 0, 0, 0}}, {{1, 1, 0, 0}, {0, 1, 1, 0}, {0, 0, 0, 0}, {0, 0, 0, 0}}, {{0, 0, 0, 0}, {0, 0, 0, 0}, {0, 0, 0, 0}, {0, 0, 0, 0}}, {{0, 0, 0, 0}, {0, 0, 0, 0}, {0, 0, 0, 0}, {0, 0, 0, 0}}},
             //OOOO
-            {{{1, 1, 0}, {1, 1, 0}, {0, 0, 0}}, {{0, 0, 0}, {0, 0, 0}, {0, 0, 0}}, {{0, 0, 0}, {0, 0, 0}, {0, 0, 0}}, {{0, 0, 0}, {0, 0, 0}, {0, 0, 0}}},
+            {{{1, 1, 0, 0}, {1, 1, 0, 0}, {0, 0, 0, 0}, {0, 0, 0, 0}}, {{0, 0, 0, 0}, {0, 0, 0, 0}, {0, 0, 0, 0}, {0, 0, 0, 0}}, {{0, 0, 0, 0}, {0, 0, 0, 0}, {0, 0, 0, 0}, {0, 0, 0, 0}}, {{0, 0, 0, 0}, {0, 0, 0, 0}, {0, 0, 0, 0}, {0, 0, 0, 0}}},
             //IIII
-            {{{1, 1, 1}, {0, 0, 0}, {0, 0, 0}}, {{1, 0, 0}, {1, 0, 0}, {1, 0, 0}}, {{0, 0, 0}, {0, 0, 0}, {0, 0, 0}}, {{0, 0, 0}, {0, 0, 0}, {0, 0, 0}}},
+            {{{0, 0, 0, 0}, {0, 0, 0, 0}, {0, 0, 0, 0}, {1, 1, 1, 1}}, {{1, 0, 0, 0}, {1, 0, 0, 0}, {1, 0, 0, 0}, {1, 0, 0, 0}}, {{0, 0, 0, 0}, {0, 0, 0, 0},{0, 0, 0, 0}, {0, 0, 0, 0}}, {{0, 0, 0, 0}, {0, 0, 0, 0},{0, 0, 0, 0}, {0, 0, 0, 0}}}
 
     };
 
@@ -55,7 +55,7 @@ public class TetrisPanel extends JPanel {
     ArrayList<Integer> arrayListChild;
     static int rand;
 
-    static int speed = 140;
+    static int speed = 170;
 
     int getXline = 0;
     int getYline = 0;
@@ -103,7 +103,7 @@ public class TetrisPanel extends JPanel {
             rotate = 0;
             rnd = rand;
             x = 0;
-            speed = 140;
+            speed = 170;
 
         }else {
             if (y == -25) {
@@ -152,24 +152,18 @@ public class TetrisPanel extends JPanel {
         }
         if (rnd == 4) {
             rotate = 0;
-        } else if (rnd == 5 && rotate == 2) {
+        } else if (rnd == 5 && rotate >= 2) {
             rotate = 0;
-        } else if (rnd == 3 && rotate == 2) {
+        } else if (rnd == 3 && rotate >= 2) {
             rotate = 0;
-        } else if (rnd == 2 && rotate == 2) {
+        } else if (rnd == 2 && rotate >= 2) {
             rotate = 0;
-        } else if (rnd == 0 && rotate == 4) {
-            rotate = 0;
-        } else if (rnd == 5 && rotate == 3) {
+        } else if (rnd == 0 && rotate ==4) {
             rotate = 0;
         }
 
-        if (rotate == 4 || rotate == 5 || rotate == 6 || rotate == 7) {
-            rotate = 0;
-        }
-
-        for (int i = 0; i < T[4].length - 1; i++) {
-            for (int j = 0; j < T[4][0][0].length; j++) {
+        for (int i = 0; i < T[rnd].length; i++) {
+            for (int j = 0; j < T[rnd][0][0].length; j++) {
                 if (T[rnd][rotate][i][j] != 0) {
                     BufferedImage imagef = null;
                     switch (rnd) {
@@ -232,8 +226,8 @@ public class TetrisPanel extends JPanel {
         }
 
         if (test() || y == FRAME_HEIGHT-50) {
-            for (int c = 0; c < T[4].length - 1; c++) {
-                for (int z = 0; z < T[4][0][0].length; z++) {
+            for (int c = 0; c < T[rnd].length; c++) {
+                for (int z = 0; z < T[rnd][0][0].length; z++) {
                     if (T[rnd][rotate][c][z] != 0) {
 
                         getX = c * UNIC + 6 * UNIC + x;
@@ -246,10 +240,7 @@ public class TetrisPanel extends JPanel {
                                 getY += 50;
                             }
                             if (rnd == 5 && rotate == 0) {
-                                getY -= 25;
-                            }
-                            if (rnd == 0 && rotate == 3) {
-                                getY -= 25;
+                                getY -= 50;
                             }
                             if (rnd == 3 && rotate == 1) {
                                 getY += 25;
@@ -339,8 +330,8 @@ public class TetrisPanel extends JPanel {
     public void paintLine(Graphics g) {
         getXline = 0;
         getYline = 0;
-        for (int i = 0; i < T[4].length - 1; i++) {
-            for (int j = 0; j < T[4][0][0].length; j++) {
+        for (int i = 0; i < T[rnd].length; i++) {
+            for (int j = 0; j < T[rnd][0][0].length; j++) {
                 if (T[rnd][rotate][i][j] != 0) {
                     switch (rnd) {
                         case 0 -> g.setColor(Color.white);
@@ -414,8 +405,8 @@ public class TetrisPanel extends JPanel {
                 for (ArrayList<Integer> tt : arrayList) {
                     for (int c = 0; c < tt.size(); c++) {
                         if (c % 2 == 0 && tt.get(c) == getXline - 25) {
-                            for (int f = 0; f < T[4].length - 1; f++) {
-                                for (int v = 0; v < T[4][0][0].length; v++) {
+                            for (int f = 0; f < T[rnd].length; f++) {
+                                for (int v = 0; v < T[rnd][0][0].length; v++) {
                                     if (T[rnd][rotate][f][v] != 0) {
                                         getYline = tt.get(c + 1) - 75;
                                     }
@@ -434,8 +425,8 @@ public class TetrisPanel extends JPanel {
             BufferedImage imagef = null;
             int tX = 0;
             int tY = 0;
-            for (int i = 0; i < T[4].length - 1; i++) {
-                for (int j = 0; j < T[4][0][0].length; j++) {
+            for (int i = 0; i < T[rnd].length; i++) {
+                for (int j = 0; j < T[rnd][0][0].length; j++) {
                     if (T[rr.get(0)][rr.get(1)][i][j] != 0) {
                         switch (rr.get(0)) {
                             case 0 -> {
@@ -494,8 +485,8 @@ public class TetrisPanel extends JPanel {
 
     public static boolean test(){
 
-        for (int t = 0; t < T[4].length - 1; t++) {
-            for (int j = 0; j < T[4][0][0].length; j++) {
+        for (int t = 0; t < 4; t++) {
+            for (int j = 0; j < T[rnd][0][0].length; j++) {
                 if (T[rnd][rotate][t][j] != 0) {
 
                     getX = t * UNIC + 6 * UNIC + x;
@@ -517,8 +508,8 @@ public class TetrisPanel extends JPanel {
 
     public static boolean testLeft() {
 
-        for (int t = 0; t < T[4].length - 1; t++) {
-            for (int j = 0; j < T[4][0][0].length; j++) {
+        for (int t = 0; t < T[rnd].length; t++) {
+            for (int j = 0; j < T[rnd][0][0].length; j++) {
                 if (T[rnd][rotate][t][j] != 0) {
 
                     getX = t * UNIC + 6 * UNIC + x;
@@ -541,8 +532,8 @@ public class TetrisPanel extends JPanel {
 
     public static boolean testRight() {
 
-        for (int t = 0; t < T[4].length - 1; t++) {
-            for (int j = 0; j < T[4][0][0].length; j++) {
+        for (int t = 0; t < T[rnd].length; t++) {
+            for (int j = 0; j < T[rnd][0][0].length; j++) {
                 if (T[rnd][rotate][t][j] != 0) {
 
                     getX = t * UNIC + 6 * UNIC + x;
@@ -579,13 +570,13 @@ public class TetrisPanel extends JPanel {
         BufferedImage imageOverGame;
 
         try {
-            imageOverGame = ImageIO.read(new File("C:\\Users\\eyvaz\\OneDrive\\Desktop\\TETRIS\\GamePictures\\tetrisGameOverPicture.jpg"));
+            imageOverGame = ImageIO.read(new File("C:\\Users\\eyvaz\\Downloads\\game-over (2).png"));
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
 
-        Image imgGameOv = imageOverGame.getScaledInstance(380, 160, 4);
-        g.drawImage(imgGameOv, 10, 150, this);
+        Image imgGameOv = imageOverGame.getScaledInstance(300, 180, 4);
+        g.drawImage(imgGameOv, 40, 150, this);
 
     }
 
@@ -601,7 +592,7 @@ public class TetrisPanel extends JPanel {
     public void whantIsNewGame() {
 
         JLabel lEADtEXT = new JLabel();
-        lEADtEXT.setText("Yenidən oyna");
+        lEADtEXT.setText("Play again");
         lEADtEXT.setBounds(170, 240, 300, 100);
         lEADtEXT.setForeground(Color.orange);
         this.add(lEADtEXT);
@@ -634,7 +625,7 @@ public class TetrisPanel extends JPanel {
                 pause_cont = false;
                 pause_cont2 = true;
 
-                TetrisScorePanel.scr = 0;
+                TetrisScorePanel.score = 0;
             }
         });
         buttonj.addActionListener(new ActionListener() {

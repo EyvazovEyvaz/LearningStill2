@@ -43,7 +43,7 @@ public class TetrisScorePanel extends JPanel {
 
     int xForLabel = 0;
 
-    JLabel next = new JLabel("NEXT");
+    JLabel next = new JLabel();
 
     int clr1 = 255;
     int clr2 = 0;
@@ -70,8 +70,8 @@ public class TetrisScorePanel extends JPanel {
 
     };
 
-    BufferedImage image0;
-    Image img0;
+    BufferedImage image0, imageForScore, imageSt;
+    Image img0, imageForScoreResize, imgSt;
     JLabel scoreL = new JLabel();
 
     TetrisScorePanel(int random) {
@@ -87,11 +87,15 @@ public class TetrisScorePanel extends JPanel {
 
         try {
             image0 = ImageIO.read(new File("C:\\Users\\eyvaz\\OneDrive\\Desktop\\TETRIS\\GamePictures\\ScorePanelBackPicture.jpg"));
+            imageForScore = ImageIO.read(new File("C:\\Users\\eyvaz\\Downloads\\diamond (3).png"));
+            imageSt = ImageIO.read(new File("C:\\Users\\eyvaz\\Downloads\\diamond (2).png"));
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
 
         img0 = image0.getScaledInstance(getWidth(), getHeight(), 4);
+        imageForScoreResize = imageForScore.getScaledInstance(getWidth()-190, getHeight()-490, 5);
+        imgSt = imageSt.getScaledInstance(getWidth()-190, getHeight()-490, 5);
     }
 
     public void scoreLabel(int clForNextLbl1, int clForNextLbl2, int clForNextLbl3) {
@@ -103,9 +107,11 @@ public class TetrisScorePanel extends JPanel {
         this.add(jLabelScore);
         this.setLayout(null);
 
-        next.setBounds(xForLabel, 70, 100, 50);
+        next.setBounds(xForLabel, 70, 200, 50);
         next.setFont(new Font("BOLD", Font.BOLD, 20));
         next.setForeground(new Color(clForNextLbl1, clForNextLbl2, clForNextLbl3));
+        next.setIcon(new ImageIcon("C:\\Users\\eyvaz\\Downloads\\star.png"));
+        next.setText("NEXT");
         this.add(next);
         this.setLayout(null);
 
@@ -114,7 +120,7 @@ public class TetrisScorePanel extends JPanel {
     public void score() {
 
         scoreL.setText(String.valueOf(score));
-        scoreL.setBounds(160, -10, 100, 100);
+        scoreL.setBounds(180, -10, 100, 100);
         scoreL.setFont(new Font("BOLD", Font.BOLD, 60));
         scoreL.setForeground(Color.white);
         this.add(scoreL);
@@ -127,6 +133,8 @@ public class TetrisScorePanel extends JPanel {
 
        // Image img0 = image0.getScaledInstance(getWidth(), getHeight(), 5);
         g.drawImage(img0, 0, 0, this);
+        g.drawImage(imageForScoreResize, 100, 10, this);
+        g.drawImage(imgSt, 96, 16, this);
 
         scoreL.setText(String.valueOf(score));
 
@@ -245,17 +253,17 @@ public class TetrisScorePanel extends JPanel {
 
                 if (!TetrisPanel.pause_cont && TetrisScorePanel.v != 0) {
                     int m1 = 175;
-                    if (TetrisPanel.rnd == 1 || TetrisPanel.rnd == 4 || TetrisPanel.rotate == 1) {
-                        m1 += 25;
-                    }
-                    if (TetrisPanel.rnd == 5 && TetrisPanel.rotate == 0) {
-                        m1 += 50;
-                    }
-                    if (TetrisPanel.rnd == 5 && TetrisPanel.rotate == 1) {
-                        m1 -= 50;
-                    }
                     if (TetrisPanel.rnd == 2 && TetrisPanel.rotate == 1) {
                         m1 -= 25;
+                    }
+                    if (TetrisPanel.rnd == 0 && TetrisPanel.rotate == 1 || TetrisPanel.rotate == 3) {
+                        m1 += 25;
+                    }
+                    if (TetrisPanel.rnd == 4) {
+                        m1 += 25;
+                    }
+                    if (TetrisPanel.rnd == 3 && TetrisPanel.rotate == 1) {
+                        m1 += 25;
                     }
                     if (TetrisPanel.x < m1 && !TetrisPanel.testRight())
                         TetrisPanel.x += 25;
@@ -296,10 +304,24 @@ public class TetrisScorePanel extends JPanel {
                     }
                     if (TetrisPanel.rnd == 1 && TetrisPanel.rotate == 2) {
                         n1 -= 25;
-                    }/*if (TetrisPanel.rnd==5 && TetrisPanel.rotate==1){
-                        n1 -=50;*/
+                    }
                     if (TetrisPanel.rnd == 2 && TetrisPanel.rotate == 0) {
                         n1 += 25;
+                    }
+                    if (TetrisPanel.rnd == 0 && TetrisPanel.rotate == 1) {
+                        n1 += 25;
+                    }
+                    if (TetrisPanel.rnd == 1 && TetrisPanel.rotate == 0) {
+                        n1 -= 25;
+                    }
+                    if (TetrisPanel.rnd == 1 && TetrisPanel.rotate == 1) {
+                        n1 += 50;
+                    }
+                    if (TetrisPanel.rnd == 5 && TetrisPanel.rotate == 0) {
+                        n1 -= 75;
+                    }
+                    if (TetrisPanel.rnd == 5 && TetrisPanel.rotate == 1) {
+                        n1 += 75;
                     }
                     if (TetrisPanel.x > n1 && !TetrisPanel.testLeft())
                         TetrisPanel.x -= 25;
@@ -359,6 +381,8 @@ public class TetrisScorePanel extends JPanel {
         buttonReset.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                score = 0;
+                TetrisPanel.x = 0;
                 try {
                     musicForReset();
                 } catch (UnsupportedAudioFileException | IOException | LineUnavailableException ex) {
@@ -369,6 +393,7 @@ public class TetrisScorePanel extends JPanel {
                     TetrisPanel.rnd = TetrisPanel.randommm();
                     TetrisPanel.y = -25;
                     checkReset = true;
+
                     //clip.stop();
                 }
             }
@@ -472,6 +497,9 @@ public class TetrisScorePanel extends JPanel {
                 if (!TetrisPanel.pause_cont && TetrisScorePanel.v != 0) {
                     TetrisPanel.rotateCheck = true;
                     TetrisPanel.rotate++;
+                    if (TetrisPanel.rotate==4){
+                        TetrisPanel.rotate = 0;
+                    }
                     if (TetrisPanel.rnd != 4 ){
                         try {
                             musicForStone();

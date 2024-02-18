@@ -4,17 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9aa372d7-6a7f-4006-b9fc-40f79ba27c2b" name="Changes" comment="atLastTHeEnd1">
-      <change afterPath="$PROJECT_DIR$/rich4/src/Book.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/rich4/src/Cataloc.java" afterDir="false" />
+    <list default="true" id="9aa372d7-6a7f-4006-b9fc-40f79ba27c2b" name="Changes" comment="taskCollections">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rich/production/taskoop/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/rich/production/taskoop/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rich/production/testrisgamefirst/TetrisFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/rich/production/testrisgamefirst/TetrisFrame.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rich/production/testrisgamefirst/TetrisPanel$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/rich/production/testrisgamefirst/TetrisPanel$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rich/production/testrisgamefirst/TetrisPanel$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/rich/production/testrisgamefirst/TetrisPanel$2.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rich/production/testrisgamefirst/TetrisPanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/rich/production/testrisgamefirst/TetrisPanel.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rich/production/testrisgamefirst/TetrisScorePanel$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/rich/production/testrisgamefirst/TetrisScorePanel$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rich/production/testrisgamefirst/TetrisScorePanel$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/rich/production/testrisgamefirst/TetrisScorePanel$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rich/production/testrisgamefirst/TetrisScorePanel$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/rich/production/testrisgamefirst/TetrisScorePanel$3.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rich/production/testrisgamefirst/TetrisScorePanel$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/rich/production/testrisgamefirst/TetrisScorePanel$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rich/production/testrisgamefirst/TetrisScorePanel$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/rich/production/testrisgamefirst/TetrisScorePanel$5.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rich/production/testrisgamefirst/TetrisScorePanel$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/rich/production/testrisgamefirst/TetrisScorePanel$6.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rich/production/testrisgamefirst/TetrisScorePanel.class" beforeDir="false" afterPath="$PROJECT_DIR$/rich/production/testrisgamefirst/TetrisScorePanel.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rich4/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/rich4/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testrisgamefirst/src/TetrisFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/testrisgamefirst/src/TetrisFrame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testrisgamefirst/src/TetrisPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/testrisgamefirst/src/TetrisPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testrisgamefirst/src/TetrisScorePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/testrisgamefirst/src/TetrisScorePanel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +70,7 @@
       <recent name="C:\Users\eyvaz\OneDrive\Desktop\Projects\LearningStill\stilllearning" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Application.Main (1)">
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="testrisgamefirst" />
@@ -100,8 +107,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main (1)" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main2" />
       </list>
     </recent_temporary>
@@ -203,7 +210,15 @@
       <option name="project" value="LOCAL" />
       <updated>1707663824911</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="taskCollections">
+      <option name="closed" value="true" />
+      <created>1707937222348</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1707937222348</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -239,7 +254,8 @@
     <MESSAGE value="atLast3" />
     <MESSAGE value="atLastTHeEnd" />
     <MESSAGE value="atLastTHeEnd1" />
-    <option name="LAST_COMMIT_MESSAGE" value="atLastTHeEnd1" />
+    <MESSAGE value="taskCollections" />
+    <option name="LAST_COMMIT_MESSAGE" value="taskCollections" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/LearningStill$Main.ic" NAME="Main Coverage Results" MODIFIED="1705338283165" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
