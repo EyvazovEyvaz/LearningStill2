@@ -12,18 +12,11 @@ public class Main {
    static Cataloc cataloc = new Cataloc();
     public static void main(String[] args) throws IOException, ClassNotFoundException {
 
-       // Menu.menu()
-       // menuForCollectionTask();
-       // frequent();
-       // sort();
-       // unic();
-
-
-        LocalDateTime localDateTime = LocalDateTime.now();
-
-        DateTimeFormatter formatter = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss");
-
-
+        Menu.menu();
+        menuForCollectionTask();
+        frequent();
+        sort();
+        unic();
 
 
     }

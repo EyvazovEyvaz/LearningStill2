@@ -17,7 +17,7 @@ public class TetrisFrame extends JFrame {
         this.setTitle("EYVAZ_TETRIS_GAME");
         JLabel jLabel;
         try {
-             jLabel = new JLabel(new ImageIcon(ImageIO.read(new File("C:\\Users\\eyvaz\\Downloads\\back1.jpg"))));
+             jLabel = new JLabel(new ImageIcon(ImageIO.read(new File("C:\\Users\\eyvaz\\Downloads\\TetrisFirst.jpg"))));
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
