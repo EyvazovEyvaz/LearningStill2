@@ -5,12 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9aa372d7-6a7f-4006-b9fc-40f79ba27c2b" name="Changes" comment="collectiontask1">
-      <change afterPath="$PROJECT_DIR$/collections/src/Tarix.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/annotationProsessing/annotationProsessing.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/annotationProsessing/resources/META-INF/services/javax.annotation.processing.Processor" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/annotationProsessing/src/testannopacklevel/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/annotationProsessing/src/testannopacklevel/Metodannotation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/annotationProsessing/src/testannopacklevel/Myannotation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/annotationProsessing/src/testannopacklevel/MyannotationProsessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/annotationProsessing/src/testannopacklevel/Useranno.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/annotationProsessing/src/testannopacklevel/package-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/collections/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/collections/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rich/production/testrisgamefirst/TetrisFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/rich/production/testrisgamefirst/TetrisFrame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collections/src/Tarix.java" beforeDir="false" afterPath="$PROJECT_DIR$/collections/src/Tarix.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rich/production/taskoop/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/rich/production/taskoop/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rich/production/taskoop/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/rich/production/taskoop/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rich/production/testrisgamefirst/Main$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/rich/production/testrisgamefirst/Main$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rich/production/testrisgamefirst/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/rich/production/testrisgamefirst/Main.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/rich4/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/rich4/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testrisgamefirst/src/TetrisFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/testrisgamefirst/src/TetrisFrame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rich4/src/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/rich4/src/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testrisgamefirst/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/testrisgamefirst/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +34,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
+        <option value="AnnotationType" />
         <option value="Class" />
       </list>
     </option>
@@ -35,25 +49,27 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;ToolWindowGit.ShowToolbar&quot;: &quot;false&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;19&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/eyvaz/OneDrive/Desktop/Projects/LearningStill&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "ToolWindowGit.ShowToolbar": "false",
+    "jdk.selected.JAVA_MODULE": "19",
+    "last_opened_file_path": "C:/Users/eyvaz/OneDrive/Desktop/Projects/LearningStill",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;ChangesTree.GroupingKeys&quot;: [
-      &quot;directory&quot;,
-      &quot;module&quot;
+  "keyToStringList": {
+    "ChangesTree.GroupingKeys": [
+      "directory",
+      "module"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\eyvaz\OneDrive\Desktop\Projects\LearningStill\testrisgamefirst\src" />
@@ -63,7 +79,7 @@
       <recent name="C:\Users\eyvaz\OneDrive\Desktop\Projects\LearningStill\stilllearning" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main (2)">
+  <component name="RunManager" selected="Application.testannopacklevel.Main">
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="testrisgamefirst" />
@@ -99,18 +115,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="testannopacklevel.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="testannopacklevel.Main" />
+      <module name="annotationProsessing" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <list>
       <item itemvalue="Application.Runnn" />
-      <item itemvalue="Application.Main (2)" />
-      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.testannopacklevel.Main" />
       <item itemvalue="Application.Main (1)" />
+      <item itemvalue="Application.Main (2)" />
       <item itemvalue="Application.Main2" />
+      <item itemvalue="Application.Main" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main (2)" />
-        <item itemvalue="Application.Main (1)" />
+        <item itemvalue="Application.testannopacklevel.Main" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Main (1)" />
+        <item itemvalue="Application.Main (2)" />
         <item itemvalue="Application.Main2" />
       </list>
     </recent_temporary>

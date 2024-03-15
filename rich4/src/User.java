@@ -106,6 +106,7 @@ public class User extends Employeer implements Client{
             FileWriter file = new FileWriter(filee);
             BufferedWriter bufferedWriter = new BufferedWriter(file);
 
+
             bufferedWriter.write("CCode "+str1+"\n");
             bufferedWriter.write("CCid "+str2+"\n");
             bufferedWriter.write("CCname "+clientName);

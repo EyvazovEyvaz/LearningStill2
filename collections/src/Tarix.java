@@ -100,7 +100,6 @@ public class Tarix {
 
         System.out.println("age: "+differ.getYears());
 
-
     }
 
 }

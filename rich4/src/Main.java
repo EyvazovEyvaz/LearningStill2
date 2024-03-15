@@ -20,6 +20,7 @@ public class Main {
 
 
     }
+
     public static void chooseForMenu(){
 
         Scanner scanner = new Scanner(System.in);
