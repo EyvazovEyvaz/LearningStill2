@@ -100,6 +100,15 @@ public class Tarix {
 
         System.out.println("age: "+differ.getYears());
 
+
+        LocalDate t1LocalDate = LocalDate.of(1998,9,4);
+
+        LocalDate n = LocalDate.now();
+
+        Period p = Period.between(n, t1LocalDate);
+
+        System.out.println("fnkdjfnkjn"+p.getMonths());
+
     }
 
 }

@@ -5,6 +5,11 @@ import java.util.*;
 public class Main {
     public static void main(String[] args) {
 
+
+       // Tarix t = new Tarix();
+
+       // t.calculateAge();
+
         /*Collection collection = new Collection();
 
         collection.groupingObjectsByPropertys();
@@ -21,7 +26,7 @@ public class Main {
 
 
 
-            TestJoinMethod2 t1=new TestJoinMethod2();
+           /* TestJoinMethod2 t1=new TestJoinMethod2();
             TestJoinMethod2 t2=new TestJoinMethod2();
             TestJoinMethod2 t3=new TestJoinMethod2();
 
@@ -33,43 +38,34 @@ public class Main {
 
         System.out.println("iki");
             t2.start();
-            try{
-                //t2.join();
+            try{//t2.join();
             }catch(Exception e){System.out.println(e);}
 
         System.out.println("uc");
             t3.start();
             try{
                 //t3.join();
-            }catch(Exception e){System.out.println(e);}
+            }catch(Exception e){System.out.println(e);}*/
 
 
 
 
 
-        /*Table obj = new Table();//only one object
-        MyThread1 t21=new MyThread1(obj);
-        MyThread2 t22=new MyThread2(obj);
-        t21.start();*/
-        /*try {
-            t21.join();
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }*/
-        //t22.start();
-        /*try {
-            t22.join();
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }*/
+        Table obj1 = new Table();//only one object
+        Table obj2 = new Table();
+        MyThread1 t21=new MyThread1(obj1);
+        MyThread2 t22=new MyThread2(obj2);
+        t21.start();
+        t22.start();
+
 
     }
 }
 class TestJoinMethod2 extends Thread{
-    public void run(){
-            for(int i=1;i<=5;i++){
+    public synchronized void run(){
+            for(int i=1;i<=50;i++){
                 try{
-                    Thread.sleep(500);
+                    Thread.sleep(1);
                 }catch(Exception e){System.out.println(e);}
                 System.out.println(i+" "+Thread.currentThread().getName());
             }

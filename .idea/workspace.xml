@@ -4,26 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9aa372d7-6a7f-4006-b9fc-40f79ba27c2b" name="Changes" comment="collectiontask1">
-      <change afterPath="$PROJECT_DIR$/annotationProsessing/annotationProsessing.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/annotationProsessing/resources/META-INF/services/javax.annotation.processing.Processor" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/annotationProsessing/src/testannopacklevel/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/annotationProsessing/src/testannopacklevel/Metodannotation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/annotationProsessing/src/testannopacklevel/Myannotation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/annotationProsessing/src/testannopacklevel/MyannotationProsessor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/annotationProsessing/src/testannopacklevel/Useranno.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/annotationProsessing/src/testannopacklevel/package-info.java" afterDir="false" />
+    <list default="true" id="9aa372d7-6a7f-4006-b9fc-40f79ba27c2b" name="Changes" comment="annnotation1">
+      <change afterPath="$PROJECT_DIR$/Testcheck/Testcheck.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/find.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/generics/generics.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/generics/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/generics/src/Testgeneric.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/regex/regex.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testexceptiondaterecordthread/src/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testexceptiondaterecordthread/src/Findspecificwordfromfile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testexceptiondaterecordthread/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testexceptiondaterecordthread/src/Mydate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testexceptiondaterecordthread/src/Myfile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testexceptiondaterecordthread/src/Mythreads.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testexceptiondaterecordthread/testexceptiondaterecordthread.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/annotationProsessing/src/testannopacklevel/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/annotationProsessing/src/testannopacklevel/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/collections/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/collections/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/collections/src/Tarix.java" beforeDir="false" afterPath="$PROJECT_DIR$/collections/src/Tarix.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rich/production/taskoop/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/rich/production/taskoop/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rich/production/taskoop/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/rich/production/taskoop/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rich/production/testrisgamefirst/Main$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/rich/production/testrisgamefirst/Main$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rich/production/testrisgamefirst/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/rich/production/testrisgamefirst/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rich4/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/rich4/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/rich4/src/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/rich4/src/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/testrisgamefirst/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/testrisgamefirst/src/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,27 +48,27 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "ToolWindowGit.ShowToolbar": "false",
-    "jdk.selected.JAVA_MODULE": "19",
-    "last_opened_file_path": "C:/Users/eyvaz/OneDrive/Desktop/Projects/LearningStill",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.lookFeel"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;ToolWindowGit.ShowToolbar&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;19&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/eyvaz/OneDrive/Desktop/Projects/LearningStill&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   },
-  "keyToStringList": {
-    "ChangesTree.GroupingKeys": [
-      "directory",
-      "module"
+  &quot;keyToStringList&quot;: {
+    &quot;ChangesTree.GroupingKeys&quot;: [
+      &quot;directory&quot;,
+      &quot;module&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\eyvaz\OneDrive\Desktop\Projects\LearningStill\testrisgamefirst\src" />
@@ -79,10 +78,10 @@
       <recent name="C:\Users\eyvaz\OneDrive\Desktop\Projects\LearningStill\stilllearning" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.testannopacklevel.Main">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="testrisgamefirst" />
+      <module name="Testcheck" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -94,16 +93,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="Main (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="taskoop" />
+      <module name="regex" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main2" />
-      <module name="taskletterswithstars" />
+    <configuration name="Main (4)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="generics" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="testexceptiondaterecordthread" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -115,28 +121,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="testannopacklevel.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="testannopacklevel.Main" />
-      <module name="annotationProsessing" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
       <item itemvalue="Application.Runnn" />
-      <item itemvalue="Application.testannopacklevel.Main" />
-      <item itemvalue="Application.Main (1)" />
-      <item itemvalue="Application.Main (2)" />
-      <item itemvalue="Application.Main2" />
       <item itemvalue="Application.Main" />
+      <item itemvalue="Application.Main (1)" />
+      <item itemvalue="Application.Main (4)" />
+      <item itemvalue="Application.Main (3)" />
+      <item itemvalue="Application.Main (2)" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.testannopacklevel.Main" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main (1)" />
+        <item itemvalue="Application.Main (4)" />
         <item itemvalue="Application.Main (2)" />
-        <item itemvalue="Application.Main2" />
+        <item itemvalue="Application.Main (3)" />
       </list>
     </recent_temporary>
   </component>
@@ -261,7 +260,15 @@
       <option name="project" value="LOCAL" />
       <updated>1708537718586</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="annnotation1">
+      <option name="closed" value="true" />
+      <created>1710540253198</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1710540253198</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -301,7 +308,8 @@
     <MESSAGE value="taskCollections" />
     <MESSAGE value="tetrisEndChanges01" />
     <MESSAGE value="collectiontask1" />
-    <option name="LAST_COMMIT_MESSAGE" value="collectiontask1" />
+    <MESSAGE value="annnotation1" />
+    <option name="LAST_COMMIT_MESSAGE" value="annnotation1" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/LearningStill$Main.ic" NAME="Main Coverage Results" MODIFIED="1705338283165" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

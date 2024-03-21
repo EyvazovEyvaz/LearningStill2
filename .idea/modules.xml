@@ -3,11 +3,15 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/LearningStill.iml" filepath="$PROJECT_DIR$/.idea/LearningStill.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Testcheck/Testcheck.iml" filepath="$PROJECT_DIR$/Testcheck/Testcheck.iml" />
       <module fileurl="file://$PROJECT_DIR$/annotationProsessing/annotationProsessing.iml" filepath="$PROJECT_DIR$/annotationProsessing/annotationProsessing.iml" />
       <module fileurl="file://$PROJECT_DIR$/collections/collections.iml" filepath="$PROJECT_DIR$/collections/collections.iml" />
+      <module fileurl="file://$PROJECT_DIR$/generics/generics.iml" filepath="$PROJECT_DIR$/generics/generics.iml" />
+      <module fileurl="file://$PROJECT_DIR$/regex/regex.iml" filepath="$PROJECT_DIR$/regex/regex.iml" />
       <module fileurl="file://$PROJECT_DIR$/rich/rich.iml" filepath="$PROJECT_DIR$/rich/rich.iml" />
       <module fileurl="file://$PROJECT_DIR$/rich2/taskletterswithstars.iml" filepath="$PROJECT_DIR$/rich2/taskletterswithstars.iml" />
       <module fileurl="file://$PROJECT_DIR$/rich4/taskoop.iml" filepath="$PROJECT_DIR$/rich4/taskoop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/testexceptiondaterecordthread/testexceptiondaterecordthread.iml" filepath="$PROJECT_DIR$/testexceptiondaterecordthread/testexceptiondaterecordthread.iml" />
       <module fileurl="file://$PROJECT_DIR$/testrisgamefirst/testrisgamefirst.iml" filepath="$PROJECT_DIR$/testrisgamefirst/testrisgamefirst.iml" />
     </modules>
   </component>
