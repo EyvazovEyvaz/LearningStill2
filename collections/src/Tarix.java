@@ -2,6 +2,7 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.time.*;
 import java.time.temporal.ChronoField;
+import java.time.temporal.ChronoUnit;
 import java.util.Calendar;
 import java.util.Date;
 
@@ -37,7 +38,6 @@ public class Tarix {
 
         System.out.println(day);
 
-
         // WITH LOCALDATE
         LocalDate st = LocalDate.of(2018, 01, 10);
 
@@ -47,14 +47,12 @@ public class Tarix {
 
         System.out.println(perdif.getDays()+" day, "+perdif.getMonths()+" month, "+perdif.getYears()+" year");
 
-
     }
     public void theNextOccurrenceDateOfTheWeekDay(){
 
         Calendar calendar = Calendar.getInstance();
         calendar.add(Calendar.DATE,7);
         System.out.println(calendar.getTime());
-
 
         LocalDate localDate = LocalDate.now();
 
@@ -99,7 +97,6 @@ public class Tarix {
         Period differ = Period.between(nowDate, birthDate);
 
         System.out.println("age: "+differ.getYears());
-
 
         LocalDate t1LocalDate = LocalDate.of(1998,9,4);
 

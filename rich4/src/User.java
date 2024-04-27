@@ -5,10 +5,8 @@ public class User extends Employeer implements Client{
    static Employeer[] userEmployeerList = new Employeer[1];
    static File[] arrClientVariableFiles1 = new File[1];
    static int sum = 0;
-
    static Account[] employeerAccountlist1 = new Account[1];
    static Account[] ClientAccountlist1 = new Account[1];
-
     int idEmp;
     int idClient;
     public User(int code, int id, String name, double salary, String profession) {
@@ -22,7 +20,6 @@ public class User extends Employeer implements Client{
     public User(){
 
     }
-
     @Override
     public void setEmployeerUserToList(Employeer addAccounEmployeertToList) {
 
@@ -42,7 +39,6 @@ public class User extends Employeer implements Client{
             System.out.println("USER_Employeer can't be null");
         }
     }
-
     @Override
     public void getEmployeerUserList() {
         int sumIndexEmp = 0;
@@ -60,7 +56,6 @@ public class User extends Employeer implements Client{
             }
         }
     }
-
     @Override
     public boolean checkSameUserEmployeers(Employeer addAccountToList){
 
@@ -78,7 +73,6 @@ public class User extends Employeer implements Client{
         }
         return false;
     }
-
     @Override
     public boolean checkNullUserEmployeers(Employeer addAccountToList) {
         if (addAccountToList.getId()==0 || addAccountToList.getCode()==0 || addAccountToList.getSalary()==0 ||
@@ -87,7 +81,6 @@ public class User extends Employeer implements Client{
         }
         return false;
     }
-
     @Override
     public void setClientVariablesToFile(int clientCode, int clientId, String clientName) throws IOException {
         idClient = clientId;
@@ -183,6 +176,4 @@ public class User extends Employeer implements Client{
             System.out.println("This Id don't match with any User! browse the list");
         }
     }
-
-
 }

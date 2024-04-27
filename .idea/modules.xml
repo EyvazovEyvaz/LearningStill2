@@ -9,8 +9,10 @@
       <module fileurl="file://$PROJECT_DIR$/generics/generics.iml" filepath="$PROJECT_DIR$/generics/generics.iml" />
       <module fileurl="file://$PROJECT_DIR$/regex/regex.iml" filepath="$PROJECT_DIR$/regex/regex.iml" />
       <module fileurl="file://$PROJECT_DIR$/rich/rich.iml" filepath="$PROJECT_DIR$/rich/rich.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sendbulksms/sendbulksms.iml" filepath="$PROJECT_DIR$/sendbulksms/sendbulksms.iml" />
       <module fileurl="file://$PROJECT_DIR$/rich2/taskletterswithstars.iml" filepath="$PROJECT_DIR$/rich2/taskletterswithstars.iml" />
       <module fileurl="file://$PROJECT_DIR$/rich4/taskoop.iml" filepath="$PROJECT_DIR$/rich4/taskoop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/testcertifitace/testcertifitace.iml" filepath="$PROJECT_DIR$/testcertifitace/testcertifitace.iml" />
       <module fileurl="file://$PROJECT_DIR$/testexceptiondaterecordthread/testexceptiondaterecordthread.iml" filepath="$PROJECT_DIR$/testexceptiondaterecordthread/testexceptiondaterecordthread.iml" />
       <module fileurl="file://$PROJECT_DIR$/testrisgamefirst/testrisgamefirst.iml" filepath="$PROJECT_DIR$/testrisgamefirst/testrisgamefirst.iml" />
     </modules>

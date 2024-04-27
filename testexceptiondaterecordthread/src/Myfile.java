@@ -1,12 +1,7 @@
 import java.io.*;
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Scanner;
-
 public class Myfile {
-
    static ArrayList<String> arrayList = new ArrayList<>();
-
     static int sum_numbertypes = 0;
     static int index = 0;
     public static void testfile() throws FileNotFoundException {

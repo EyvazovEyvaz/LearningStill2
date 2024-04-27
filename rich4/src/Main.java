@@ -13,12 +13,11 @@ public class Main {
     public static void main(String[] args) throws IOException, ClassNotFoundException {
 
         Menu.menu();
-        menuForCollectionTask();
+        /*menuForCollectionTask();
         frequent();
         sort();
         unic();
-
-
+*/
     }
 
     public static void chooseForMenu(){

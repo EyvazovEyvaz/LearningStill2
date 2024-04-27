@@ -1,7 +1,9 @@
+import java.text.NumberFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.time.LocalDate;
 import java.time.Period;
+import java.util.Calendar;
 import java.util.Date;
 
 public class Mydate {
@@ -19,9 +21,28 @@ public class Mydate {
         System.out.println(differ.getDays());
 
 
+        int years = 2024;
+        int month = 03;
+        int day = 23;
+
+        String[] str = {"SUNDAY", "MONDAY", "TUESDAY", "WEDNESDAY", "THURSDAY", "FRIDAY", "STURDAY"};
+
+        Calendar calendar = Calendar.getInstance();
+
+        calendar.set(years, month-1, day);
+
+        int p = calendar.get(Calendar.DAY_OF_WEEK);
+
+        System.out.println(str[p-1]);
+
+        NumberFormat numberFormat = NumberFormat.getCurrencyInstance();
+
+        numberFormat.getCurrency();
+
     }
 
     public void parseStringToDate(){
+
 
         String str = "01-05-1999 22:11:11";
 

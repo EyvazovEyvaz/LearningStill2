@@ -62,7 +62,7 @@ public class TetrsiFirstPagePanel extends JPanel {
         }
 
         try {
-            image1 = ImageIO.read(new File("C:\\Users\\eyvaz\\Downloads\\FIRSTd.gif"));
+            image1 = ImageIO.read(new File("C:\\Users\\eyvaz\\OneDrive\\Desktop\\TETRIS\\GamePictures\\TetrisFirstFrameBackPicture.gif"));
         } catch (IOException e) {
             throw new RuntimeException(e);
         }
@@ -88,10 +88,10 @@ public class TetrsiFirstPagePanel extends JPanel {
         f1y2 += 50;
         f1y3 += 50;
 
-        firstPageStone(g,"C:\\Users\\eyvaz\\OneDrive\\Pictures\\Screenshots\\tetris (9_3).png",f1x1,f1y1);
-        firstPageStone(g,"C:\\Users\\eyvaz\\OneDrive\\Pictures\\Screenshots\\tetris (9_3).png",f1x1,f1y2);
-        firstPageStone(g,"C:\\Users\\eyvaz\\OneDrive\\Pictures\\Screenshots\\tetris (9_3).png",f1x1,f1y3);
-        firstPageStone(g,"C:\\Users\\eyvaz\\OneDrive\\Pictures\\Screenshots\\tetris (9_3).png",f1x2,f1y3);
+        firstPageStone(g,"C:\\Users\\eyvaz\\OneDrive\\Desktop\\TETRIS\\GamePictures\\block1.jpg",f1x1,f1y1);
+        firstPageStone(g,"C:\\Users\\eyvaz\\OneDrive\\Desktop\\TETRIS\\GamePictures\\block1.jpg",f1x1,f1y2);
+        firstPageStone(g,"C:\\Users\\eyvaz\\OneDrive\\Desktop\\TETRIS\\GamePictures\\block1.jpg",f1x1,f1y3);
+        firstPageStone(g,"C:\\Users\\eyvaz\\OneDrive\\Desktop\\TETRIS\\GamePictures\\block1.jpg",f1x2,f1y3);
 
         f2x1 += 50;
         f2x2 += 50;
@@ -99,10 +99,10 @@ public class TetrsiFirstPagePanel extends JPanel {
         f2y1 += 50;
         f2y2 += 50;
 
-        firstPageStone(g,"C:\\Users\\eyvaz\\OneDrive\\Pictures\\Screenshots\\tetris (9_6).png",f2x1,f2y1);
-        firstPageStone(g,"C:\\Users\\eyvaz\\OneDrive\\Pictures\\Screenshots\\tetris (9_6).png",f2x2,f2y1);
-        firstPageStone(g,"C:\\Users\\eyvaz\\OneDrive\\Pictures\\Screenshots\\tetris (9_6).png",f2x3,f2y1);
-        firstPageStone(g,"C:\\Users\\eyvaz\\OneDrive\\Pictures\\Screenshots\\tetris (9_6).png",f2x2,f2y2);
+        firstPageStone(g,"C:\\Users\\eyvaz\\OneDrive\\Desktop\\TETRIS\\GamePictures\\block2.jpg",f2x1,f2y1);
+        firstPageStone(g,"C:\\Users\\eyvaz\\OneDrive\\Desktop\\TETRIS\\GamePictures\\block2.jpg",f2x2,f2y1);
+        firstPageStone(g,"C:\\Users\\eyvaz\\OneDrive\\Desktop\\TETRIS\\GamePictures\\block2.jpg",f2x3,f2y1);
+        firstPageStone(g,"C:\\Users\\eyvaz\\OneDrive\\Desktop\\TETRIS\\GamePictures\\block2.jpg",f2x2,f2y2);
 
 
         f3x1 += 50;
@@ -110,9 +110,9 @@ public class TetrsiFirstPagePanel extends JPanel {
         f3y2 += 50;
         f3y3 += 50;
 
-        firstPageStone(g,"C:\\Users\\eyvaz\\OneDrive\\Pictures\\Screenshots\\tetris (9_!).png",f3x1,f3y1);
-        firstPageStone(g,"C:\\Users\\eyvaz\\OneDrive\\Pictures\\Screenshots\\tetris (9_!).png",f3x1,f3y2);
-        firstPageStone(g,"C:\\Users\\eyvaz\\OneDrive\\Pictures\\Screenshots\\tetris (9_!).png",f3x1,f3y3);
+        firstPageStone(g,"C:\\Users\\eyvaz\\OneDrive\\Desktop\\TETRIS\\GamePictures\\block3.jpg",f3x1,f3y1);
+        firstPageStone(g,"C:\\Users\\eyvaz\\OneDrive\\Desktop\\TETRIS\\GamePictures\\block3.jpg",f3x1,f3y2);
+        firstPageStone(g,"C:\\Users\\eyvaz\\OneDrive\\Desktop\\TETRIS\\GamePictures\\block3.jpg",f3x1,f3y3);
 
         f4x1 -= 50;
         f4x2 -= 50;
@@ -120,20 +120,20 @@ public class TetrsiFirstPagePanel extends JPanel {
         f4y2 += 50;
         f4y3 += 50;
 
-        firstPageStone(g,"C:\\Users\\eyvaz\\OneDrive\\Pictures\\Screenshots\\tetris (9_2).png",f4x1,f4y1);
-        firstPageStone(g,"C:\\Users\\eyvaz\\OneDrive\\Pictures\\Screenshots\\tetris (9_2).png",f4x1,f4y2);
-        firstPageStone(g,"C:\\Users\\eyvaz\\OneDrive\\Pictures\\Screenshots\\tetris (9_2).png",f4x2,f4y2);
-        firstPageStone(g,"C:\\Users\\eyvaz\\OneDrive\\Pictures\\Screenshots\\tetris (9_2).png",f4x2,f4y3);
+        firstPageStone(g,"C:\\Users\\eyvaz\\OneDrive\\Desktop\\TETRIS\\GamePictures\\block4.jpg",f4x1,f4y1);
+        firstPageStone(g,"C:\\Users\\eyvaz\\OneDrive\\Desktop\\TETRIS\\GamePictures\\block4.jpg",f4x1,f4y2);
+        firstPageStone(g,"C:\\Users\\eyvaz\\OneDrive\\Desktop\\TETRIS\\GamePictures\\block4.jpg",f4x2,f4y2);
+        firstPageStone(g,"C:\\Users\\eyvaz\\OneDrive\\Desktop\\TETRIS\\GamePictures\\block4.jpg",f4x2,f4y3);
 
         f5x1 -= 50;
         f5x2 -= 50;
         f5y1 += 50;
         f5y2 += 50;
 
-        firstPageStone(g,"C:\\Users\\eyvaz\\OneDrive\\Pictures\\Screenshots\\tetris (9_4).png",f5x1,f5y1);
-        firstPageStone(g,"C:\\Users\\eyvaz\\OneDrive\\Pictures\\Screenshots\\tetris (9_4).png",f5x2,f5y1);
-        firstPageStone(g,"C:\\Users\\eyvaz\\OneDrive\\Pictures\\Screenshots\\tetris (9_4).png",f5x1,f5y2);
-        firstPageStone(g,"C:\\Users\\eyvaz\\OneDrive\\Pictures\\Screenshots\\tetris (9_4).png",f5x2,f5y2);
+        firstPageStone(g,"C:\\Users\\eyvaz\\OneDrive\\Desktop\\TETRIS\\GamePictures\\block5.jpg",f5x1,f5y1);
+        firstPageStone(g,"C:\\Users\\eyvaz\\OneDrive\\Desktop\\TETRIS\\GamePictures\\block5.jpg",f5x2,f5y1);
+        firstPageStone(g,"C:\\Users\\eyvaz\\OneDrive\\Desktop\\TETRIS\\GamePictures\\block5.jpg",f5x1,f5y2);
+        firstPageStone(g,"C:\\Users\\eyvaz\\OneDrive\\Desktop\\TETRIS\\GamePictures\\block5.jpg",f5x2,f5y2);
 
         f6x1 -= 50;
         f6x2 -= 50;
@@ -141,10 +141,10 @@ public class TetrsiFirstPagePanel extends JPanel {
         f6y1 += 50;
         f6y2 += 50;
 
-        firstPageStone(g,"C:\\Users\\eyvaz\\OneDrive\\Pictures\\Screenshots\\tetris (9_5).png",f6x1,f6y1);
-        firstPageStone(g,"C:\\Users\\eyvaz\\OneDrive\\Pictures\\Screenshots\\tetris (9_5).png",f6x2,f6y1);
-        firstPageStone(g,"C:\\Users\\eyvaz\\OneDrive\\Pictures\\Screenshots\\tetris (9_5).png",f6x3,f6y2);
-        firstPageStone(g,"C:\\Users\\eyvaz\\OneDrive\\Pictures\\Screenshots\\tetris (9_5).png",f6x1,f6y2);
+        firstPageStone(g,"C:\\Users\\eyvaz\\OneDrive\\Desktop\\TETRIS\\GamePictures\\block6.jpg",f6x1,f6y1);
+        firstPageStone(g,"C:\\Users\\eyvaz\\OneDrive\\Desktop\\TETRIS\\GamePictures\\block6.jpg",f6x2,f6y1);
+        firstPageStone(g,"C:\\Users\\eyvaz\\OneDrive\\Desktop\\TETRIS\\GamePictures\\block6.jpg",f6x3,f6y2);
+        firstPageStone(g,"C:\\Users\\eyvaz\\OneDrive\\Desktop\\TETRIS\\GamePictures\\block6.jpg",f6x1,f6y2);
 
        // BufferedImage imageF;
 

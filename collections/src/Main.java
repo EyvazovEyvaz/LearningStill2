@@ -6,8 +6,8 @@ public class Main {
     public static void main(String[] args) {
 
 
-       // Tarix t = new Tarix();
-
+        Tarix t = new Tarix();
+        t.countOfDaysUntilTheEndOfTheYear();
        // t.calculateAge();
 
         /*Collection collection = new Collection();

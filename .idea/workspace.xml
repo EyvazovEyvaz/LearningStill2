@@ -4,25 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9aa372d7-6a7f-4006-b9fc-40f79ba27c2b" name="Changes" comment="annnotation1">
-      <change afterPath="$PROJECT_DIR$/Testcheck/Testcheck.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/find.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/generics/generics.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/generics/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/generics/src/Testgeneric.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/regex/regex.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testexceptiondaterecordthread/src/Book.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testexceptiondaterecordthread/src/Findspecificwordfromfile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testexceptiondaterecordthread/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testexceptiondaterecordthread/src/Mydate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testexceptiondaterecordthread/src/Myfile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testexceptiondaterecordthread/src/Mythreads.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testexceptiondaterecordthread/testexceptiondaterecordthread.iml" afterDir="false" />
+    <list default="true" id="9aa372d7-6a7f-4006-b9fc-40f79ba27c2b" name="Changes" comment="taskThreadsandFiles">
+      <change afterPath="$PROJECT_DIR$/sendbulksms/sendbulksms.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sendbulksms/src/Bulksms.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/sendbulksms/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testcertifitace/src/Certificate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testcertifitace/src/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testcertifitace/testcertifitace.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/annotationProsessing/src/testannopacklevel/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/annotationProsessing/src/testannopacklevel/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/collections/src/Collection.java" beforeDir="false" afterPath="$PROJECT_DIR$/collections/src/Collection.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/collections/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/collections/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/collections/src/Tarix.java" beforeDir="false" afterPath="$PROJECT_DIR$/collections/src/Tarix.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rich/production/taskoop/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/rich/production/taskoop/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rich/production/taskoop/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/rich/production/taskoop/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rich4/src/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/rich4/src/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rich4/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/rich4/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/rich4/src/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/rich4/src/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testexceptiondaterecordthread/src/Mydate.java" beforeDir="false" afterPath="$PROJECT_DIR$/testexceptiondaterecordthread/src/Mydate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testexceptiondaterecordthread/src/Myfile.java" beforeDir="false" afterPath="$PROJECT_DIR$/testexceptiondaterecordthread/src/Myfile.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testexceptiondaterecordthread/src/Mythreads.java" beforeDir="false" afterPath="$PROJECT_DIR$/testexceptiondaterecordthread/src/Mythreads.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testrisgamefirst/src/TetrsiFirstPagePanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/testrisgamefirst/src/TetrsiFirstPagePanel.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,31 +80,31 @@
       <recent name="C:\Users\eyvaz\OneDrive\Desktop\Projects\LearningStill\stilllearning" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="Application.Main (2)">
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="Testcheck" />
+      <module name="taskoop" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="Main (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="collections" />
+      <module name="testrisgamefirst" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="Main (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="regex" />
+      <module name="testcertifitace" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="Main (4)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="generics" />
+      <module name="collections" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -123,19 +125,19 @@
     </configuration>
     <list>
       <item itemvalue="Application.Runnn" />
-      <item itemvalue="Application.Main" />
       <item itemvalue="Application.Main (1)" />
-      <item itemvalue="Application.Main (4)" />
-      <item itemvalue="Application.Main (3)" />
       <item itemvalue="Application.Main (2)" />
+      <item itemvalue="Application.Main (3)" />
+      <item itemvalue="Application.Main (4)" />
+      <item itemvalue="Application.Main" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Main (2)" />
         <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.Main (4)" />
-        <item itemvalue="Application.Main (2)" />
         <item itemvalue="Application.Main (3)" />
+        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -268,7 +270,15 @@
       <option name="project" value="LOCAL" />
       <updated>1710540253198</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="taskThreadsandFiles">
+      <option name="closed" value="true" />
+      <created>1711049907616</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1711049907616</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -309,7 +319,8 @@
     <MESSAGE value="tetrisEndChanges01" />
     <MESSAGE value="collectiontask1" />
     <MESSAGE value="annnotation1" />
-    <option name="LAST_COMMIT_MESSAGE" value="annnotation1" />
+    <MESSAGE value="taskThreadsandFiles" />
+    <option name="LAST_COMMIT_MESSAGE" value="taskThreadsandFiles" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/LearningStill$Main.ic" NAME="Main Coverage Results" MODIFIED="1705338283165" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

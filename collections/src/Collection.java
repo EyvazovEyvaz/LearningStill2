@@ -117,7 +117,6 @@ public class Collection {
 
         map.forEach((k,v) -> System.out.println(k+"---"+v));
 
-
         // COMPARE TWO OBJECTS WITH EQUALS METOD OVERRIDE
         //System.out.println(person1.equals(person1));
     }

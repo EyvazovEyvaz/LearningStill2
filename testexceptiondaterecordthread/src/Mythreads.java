@@ -1,12 +1,10 @@
 import java.util.PriorityQueue;
 import java.util.Queue;
-import java.util.Scanner;
 
 public class Mythreads {
 
    static Queue<Integer> queue =new PriorityQueue<>();
 
-   Object ob = new Object();
     public class Mythread extends Thread{
 
         public void run(){
